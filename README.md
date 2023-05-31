@@ -173,7 +173,7 @@ Computer chose:
 It's a draw!
 ```
 
-# 🔑 Password Generator
+# 🔑 ≤Password Generator
 
 This is a simple Python script that generates a random password based on the user's input.
 
@@ -198,3 +198,47 @@ How many numbers would you like in your password?
 2
 Here is your password: 4wVj!x6U9Q2%
 ```
+
+# ꡌ‍ꡙ‍ꡚ Escaping the maze
+
+This is a Python script that provides a universal solution for all challenges in Reeborg's World.
+
+## Introduction
+
+Reeborg's World is an educational platform that allows users to learn programming through interactive challenges. The challenges involve controlling a virtual robot named Reeborg to perform specific tasks in a grid-based environment.
+
+## Universal Solution
+
+The provided code snippet offers a universal solution for all challenges in Reeborg's World, ranging from the "Alone" challenge to the "Maze" challenge. However, the actual solution logic is missing from the code. It seems to define a function turn_right() that turns the robot to the right, and a while loop that executes until the robot reaches the goal.
+
+To complete the code and solve a specific challenge, you need to add the appropriate logic inside the while loop based on the requirements of that particular challenge. This might involve using conditions such as wall_on_right(), front_is_clear(), wall_in_front(), and right_is_clear() to make decisions about the robot's movements and actions.
+
+Feel free to modify the code and add the necessary instructions to solve a specific challenge in Reeborg's World.
+
+## Example
+
+To demonstrate the usage of the code, let's consider a hypothetical challenge where the robot needs to move forward until it reaches the goal:
+
+```bash
+def turn_right():
+    for i in range(3):
+        turn_left()
+
+while not at_goal():
+    if (wall_on_right() and front_is_clear()):
+        move()
+    elif (wall_on_right() and wall_in_front()):
+        turn_left()
+    elif (wall_in_front() and right_is_clear()):
+        turn_right()
+        move()
+    elif (front_is_clear() and right_is_clear()):
+        turn_right()
+        move()
+```
+
+
+
+In this example, the robot checks if the front is clear. If it is, the robot moves forward. If there is a wall in front, the robot turns left. This logic will continue until the robot reaches the goal.
+
+Please note that this is just an example, and the actual solution depends on the specific challenge you are working on.
