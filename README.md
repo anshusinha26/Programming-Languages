@@ -21,3 +21,29 @@ Enter the name of the pet: Luna
 Luna
 Your band name could be New York Luna
 ```
+
+# 💵 Tip Calculator
+
+This is a Python script that calculates the amount to be paid by each person when splitting a bill, including the tip.
+
+## Usage
+
+1. Run the script in a Python environment.
+2. You will be prompted to enter the total bill amount as a float value.
+3. Enter the total bill amount and press enter.
+4. You will then be prompted to enter the tip percentage as a float value.
+5. Enter the tip percentage and press enter.
+6. The script will calculate the total bill amount including the tip.
+7. You will be prompted to enter the number of people to split the bill with.
+8. Enter the number of people and press enter.
+9. The script will calculate the amount to be paid by each individual and print it.
+
+## Example
+
+```bash
+Welcome to the Tip Calculator!
+What was the total bill? ₹1000
+What percentage tip would you like to give? 10
+How many people to split the bill with? 5
+Each person should pay ₹220.0
+```
