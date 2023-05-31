@@ -55,20 +55,20 @@ Welcome to the Treasure Island! Your mission is to find the treasure and overcom
 ## Instructions
 
 1. You will start at a crossroad and need to choose a direction.
-    - Type 'l' for 'left' or 'r' for 'right' and press enter.
-    - If you choose the wrong direction, the game will end.
-    - If you choose the correct direction, you will proceed to the next stage.
+   - Type 'l' for 'left' or 'r' for 'right' and press enter.
+   - If you choose the wrong direction, the game will end.
+   - If you choose the correct direction, you will proceed to the next stage.
 2. Next, you will come across a lake with an island in the middle.
-    - You have two options: 'wait' for a boat or 'swim' across.
-    - Type 'w' to 'wait' or 's' to 'swim' and press enter.
-    - If you choose to swim, you will be attacked by an angry trout, and the game will end.
-    - If you choose to wait, you will safely reach the island.
+   - You have two options: 'wait' for a boat or 'swim' across.
+   - Type 'w' to 'wait' or 's' to 'swim' and press enter.
+   - If you choose to swim, you will be attacked by an angry trout, and the game will end.
+   - If you choose to wait, you will safely reach the island.
 3. Upon reaching the island, you will encounter a house with three doors.
-    - Choose a door by typing 'r' for 'red', 'y' for 'yellow', or 'b' for 'blue' and press enter.
-    - Each door leads to a different outcome.
-    - The red door leads to a room full of fire, and the game ends.
-    - The yellow door leads to a room full of beasts, and the game ends.
-    - The blue door leads to the treasure, and you win the game!
+   - Choose a door by typing 'r' for 'red', 'y' for 'yellow', or 'b' for 'blue' and press enter.
+   - Each door leads to a different outcome.
+   - The red door leads to a room full of fire, and the game ends.
+   - The yellow door leads to a room full of beasts, and the game ends.
+   - The blue door leads to the treasure, and you win the game!
 
 ```bash
 *******************************************************************************
@@ -103,13 +103,13 @@ This is a simple Python script that allows you to play the game Rock Paper Sciss
 
 1. Run the script in a Python environment.
 2. You will be prompted to choose between Rock, Paper, or Scissors.
-    - Type 0 for Rock, 1 for Paper, or 2 for Scissors and press enter.
+   - Type 0 for Rock, 1 for Paper, or 2 for Scissors and press enter.
 3. The computer will randomly choose its move.
 4. The script will display your choice and the computer's choice.
 5. The winner of the game will be determined based on the following rules:
-    - Rock beats Scissors
-    - Scissors beats Paper
-    - Paper beats Rock
+   - Rock beats Scissors
+   - Scissors beats Paper
+   - Paper beats Rock
 6. The result of the game will be displayed.
 
 ## ASCII Art
@@ -117,7 +117,8 @@ This is a simple Python script that allows you to play the game Rock Paper Sciss
 The script includes ASCII art for each choice:
 
 - Rock:
-```bash 
+
+```bash
     _______
 ---'   ____)
       (_____)
@@ -127,6 +128,7 @@ The script includes ASCII art for each choice:
 ```
 
 - Paper:
+
 ```bash
     _______
 ---'   ____)____
@@ -137,6 +139,7 @@ The script includes ASCII art for each choice:
 ```
 
 - Scissors:
+
 ```bash
     _______
 ---'   ____)____
@@ -146,7 +149,7 @@ The script includes ASCII art for each choice:
 ---.__(___)
 ```
 
-## Example 
+## Example
 
 ```bash
 What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors: 1
