@@ -47,3 +47,25 @@ What percentage tip would you like to give? 10
 How many people to split the bill with? 5
 Each person should pay ₹220.0
 ```
+
+# 🏝️ Treasure Island
+
+Welcome to the Treasure Island! Your mission is to find the treasure and overcome various obstacles along the way.
+
+## Instructions
+
+1. You will start at a crossroad and need to choose a direction.
+    - Type 'l' for 'left' or 'r' for 'right' and press enter.
+    - If you choose the wrong direction, the game will end.
+    - If you choose the correct direction, you will proceed to the next stage.
+2. Next, you will come across a lake with an island in the middle.
+    - You have two options: 'wait' for a boat or 'swim' across.
+    - Type 'w' to 'wait' or 's' to 'swim' and press enter.
+    - If you choose to swim, you will be attacked by an angry trout, and the game will end.
+    - If you choose to wait, you will safely reach the island.
+3. Upon reaching the island, you will encounter a house with three doors.
+    - Choose a door by typing 'r' for 'red', 'y' for 'yellow', or 'b' for 'blue' and press enter.
+    - Each door leads to a different outcome.
+    - The red door leads to a room full of fire, and the game ends.
+    - The yellow door leads to a room full of beasts, and the game ends.
+    - The blue door leads to the treasure, and you win the game!
