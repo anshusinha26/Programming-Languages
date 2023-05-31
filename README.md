@@ -94,3 +94,78 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 Welcome to the Treasure Island
 ```
+
+# ✊🏻 ✋🏻 🖖🏻 Rock Paper Scissors
+
+This is a simple Python script that allows you to play the game Rock Paper Scissors against the computer.
+
+## Instructions
+
+1. Run the script in a Python environment.
+2. You will be prompted to choose between Rock, Paper, or Scissors.
+    - Type 0 for Rock, 1 for Paper, or 2 for Scissors and press enter.
+3. The computer will randomly choose its move.
+4. The script will display your choice and the computer's choice.
+5. The winner of the game will be determined based on the following rules:
+    - Rock beats Scissors
+    - Scissors beats Paper
+    - Paper beats Rock
+6. The result of the game will be displayed.
+
+## ASCII Art
+
+The script includes ASCII art for each choice:
+
+- Rock:
+```bash 
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+```
+
+- Paper:
+```bash
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+```
+
+- Scissors:
+```bash
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+```
+
+## Example 
+
+```bash
+What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors: 1
+
+You chose:
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+
+Computer chose:
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+
+It's a draw!
+```
