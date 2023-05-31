@@ -1,4 +1,4 @@
-# 🔹 Band Name Generator
+# 🎸 Band Name Generator
 
 This is a simple Python script that generates a band name based on the user's input.
 
