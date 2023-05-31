@@ -172,3 +172,29 @@ Computer chose:
 
 It's a draw!
 ```
+
+# Password Generator
+
+This is a simple Python script that generates a random password based on the user's input.
+
+## Usage
+
+1. Run the script in a Python environment.
+2. You will be prompted to enter the number of letters, symbols, and numbers you want in your password.
+3. Enter the desired number for each category and press enter.
+4. The script will generate a random password combining lowercase letters, uppercase letters, symbols, and numbers.
+5. The password will be shuffled for added security.
+6. The final password will be displayed.
+
+## Example
+
+```bash
+Welcome to the PyPassword Generator!
+How many letters would you like in your password?
+8
+How many symbols would you like in your password?
+3
+How many numbers would you like in your password?
+2
+Here is your password: 4wVj!x6U9Q2%
+```
