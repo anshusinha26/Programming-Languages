@@ -237,7 +237,7 @@ while not at_goal():
         move()
 ```
 
-
+![Escaping the maze](Images/escaping_the_maze.png)
 
 In this example, the robot checks if the front is clear. If it is, the robot moves forward. If there is a wall in front, the robot turns left. This logic will continue until the robot reaches the goal.
 
