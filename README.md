@@ -709,3 +709,80 @@ Money: $2.5
 
 What would you like? (espresso / latte / cappuccino): exit
 ```
+
+# 🤔 Quiz
+
+This readme provides an overview of the quiz project, including the main files and their functionality.
+
+## main.py
+
+The main.py file is the entry point of the quiz project. It imports the necessary modules and initializes the question bank.
+
+```bash
+from question_model import Question
+from data import question_data
+
+# Empty list
+questionBank = []
+
+# Loop through question_data and append questions and answers to the questionBank list
+for i in question_data:
+    questionBank.append(Question(i["text"], i["answer"]))
+```
+
+The code imports the Question class from the question_model module and the question_data list from the data module. It then initializes an empty questionBank list and populates it by creating Question objects based on the data from question_data.
+
+## data.py
+
+The data.py file contains the question data and answers in the question_data list.
+
+```bash
+question_data = [
+    {"text": "A slug's blood is green.", "answer": "True"},
+    {"text": "The loudest animal is the African Elephant.", "answer": "False"},
+    # ...
+]
+```
+
+The question_data list consists of dictionaries, where each dictionary represents a question with its text and answer.
+
+## question_model.py
+
+The question_model.py file defines the Question class.
+
+```bash
+class Question:
+    def __init__(self, question, answer):
+        self.quizQuestion = question
+        self.quizAnswer = answer
+```
+
+The Question class has an __init__ method that initializes each question object with a quizQuestion and a quizAnswer.
+
+## quiz_brain.py
+
+The quiz_brain.py file contains the QuizBrain class, which manages the quiz questions and user interactions.
+
+```bash
+class QuizBrain:
+    def __init__(self, qList):
+        self.questionNumber = 0
+        self.questionList = qList
+
+    def nextQuestion(self):
+        currentQuestion = self.questionList[self.questionNumber]
+        self.questionNumber += 1
+        input(f"Q.{self.questionNumber}: {currentQuestion.text} (True/False): ")
+```
+
+The QuizBrain class has an __init__ method that takes a question list (qList) as a parameter. It also has a nextQuestion method that retrieves the current question from the question list and prompts the user for an answer.
+
+## Getting Started
+
+To run the quiz project, follow these steps:
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+4. Run the main.py file using the command python main.py.
+5. The program will display each question from the question bank and prompt the user for an answer. You can modify the project code to add additional features or customize the quiz experience.
