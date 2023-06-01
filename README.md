@@ -1214,6 +1214,7 @@ The code includes the following features:
 - Moving the food to a random position within the game window.
 
 ## data.txt
+
 The data.txt file contains the highscore data for the game. It is a simple text file that stores a single integer representing the highscore.
 
 ## Usage
@@ -1243,7 +1244,7 @@ The project consists of the following files:
 - main.py: This file contains the main code for running the game. It sets up the game window, creates the paddles and ball, manages the game loop, and handles user input.
 - paddle.py: This file contains the Paddle class, which represents a paddle in the game. It handles the movement of the paddle based on user input.
 - ball.py: This file contains the Ball class, which represents the ball in the game. It handles the movement of the ball and bouncing off the paddles and walls.
-scoreboard.py: This file contains the Scoreboard class, which manages the scores of the players and displays them on the screen.
+  scoreboard.py: This file contains the Scoreboard class, which manages the scores of the players and displays them on the screen.
 
 ## Customization
 
@@ -1271,6 +1272,7 @@ main.py: This file contains the main code for running the game. It sets up the g
 player.py: This file contains the Player class, which represents the turtle in the game. It handles the movement of the turtle based on user input.
 cars.py: This file contains the Car class, which represents the cars in the game. It handles the creation and movement of the cars.
 scoreboard.py: This file contains the Scoreboard class, which manages the level and displays it on the screen. It also handles the game over condition.
+
 ## Customization
 
 You can customize various aspects of the game, such as the window size, car speed, and scoring system, by modifying the variables in the code.
@@ -1390,7 +1392,7 @@ The Pomodoro Timer follows the Pomodoro Technique, which consists of work sessio
 2. After the work session, a short break of 5 minutes is taken. You can customize the short break duration by modifying the SHORT_BREAK_MIN constant.
 3. After every 4 work sessions, a long break of 20 minutes is taken. You can customize the long break duration by modifying the LONG_BREAK_MIN constant.
 4. During each session, the timer will count down the time and display it in the format "MM:SS".
-After each work session, a checkmark ("✔") will be displayed in the UI to track the completed sessions.
+   After each work session, a checkmark ("✔") will be displayed in the UI to track the completed sessions.
 5. You can start the timer by clicking the "Start" button.
 6. You can reset the timer and clear the checkmarks by clicking the "Reset" button.
 
@@ -1539,9 +1541,11 @@ Before running Flashy, make sure you have the following installed:
 Python: Flashy is written in Python. You can download and install Python from the official website: python.org
 
 Pandas: The Pandas library is used to read and manipulate the dataset. Install it using the following command:
+
 ```bash
 pip install pandas
 ```
+
 ## Getting Started
 
 To get started with Flashy, follow these steps:
@@ -1569,6 +1573,7 @@ You can customize Flashy by modifying the following:
 - Background Color: The BACKGROUND_COLOR constant defines the background color of the application. You can modify it to change the color scheme.
 - Fonts: The FONT_LANG and FONT_WORD constants define the fonts used for language and word texts, respectively. You can modify them to change the font styles, sizes, and weights.
 - Images: Flashy uses images for the flashcard, "Right" button, and "Wrong" button. Replace the image files in the "images" folder with your own images to customize the appearance.
+
 ## Security
 
 Flashy does not handle sensitive user data or interact with external systems, so there are no specific security considerations.
@@ -1578,9 +1583,10 @@ Flashy does not handle sensitive user data or interact with external systems, so
 Flashy relies on the following dependencies:
 
 - Tkinter: The Tkinter module is used to create the user interface. It is included in the Python standard library.
-- Pandas: The Pandas library is used to read and manipulate the dataset. 
+- Pandas: The Pandas library is used to read and manipulate the dataset.
 
 Install it using the following command:
+
 ```bash
 pip install pandas
 ```
@@ -1643,6 +1649,7 @@ Before running the script, make sure you have the following:
 
 - Python: The script is written in Python. You can download and install Python from the official website: python.org
 - requests: The requests library is used to make HTTP requests to the ISS and sunrise-sunset APIs. Install it using the following command:
+
 ```bash
 pip install requests
 ```
@@ -1654,11 +1661,11 @@ smtplib: The smtplib module is used to send emails. It is included in the Python
 To use the ISS overhead notifier:
 
 1. Update the following variables in the script:
-    - MY_LAT: Set the latitude of your location.
-    - MY_LNG: Set the longitude of your location.
-    - MY_EMAIL: Set your email address from which the notifications will be sent.
-    - PASSWORD: Set the password for your email address.
-    - receiver: Set the email address of the recipient.
+   - MY_LAT: Set the latitude of your location.
+   - MY_LNG: Set the longitude of your location.
+   - MY_EMAIL: Set your email address from which the notifications will be sent.
+   - PASSWORD: Set the password for your email address.
+   - receiver: Set the email address of the recipient.
 2. Create a file named facts.txt and add interesting facts about the ISS. Each fact should be on a separate line.
 3. Run the script. It will continuously check if the ISS is overhead your location during the night.
 4. If the ISS is overhead and it is night, the script will send an email notification to the specified recipient. The email will contain a random fact about the ISS.
@@ -1716,36 +1723,40 @@ Tkinter: It is the standard GUI library for Python. It is included in most Pytho
 This is a simple Python script that sends a rain alert message using the Twilio API and the OpenWeatherMap API. The script checks the weather forecast for a specified location and sends an SMS message if rain is expected.
 
 ![Weather alert app](Images/weather_alert_app.gif)
+
 ## How to Use
 
 1. Ensure you have the necessary modules installed. You can install them using pip:
 
-    ```bash
-    pip install requests twilio
-    ```
+   ```bash
+   pip install requests twilio
+   ```
 
 2. Set up accounts and obtain the required API keys:
-    - OpenWeatherMap API: Sign up on the OpenWeatherMap website and obtain an API key. Replace owApiKey in the script with your API key.
-    - Twilio API: Sign up on the Twilio website and obtain an Account SID and an Auth Token. Replace twAccountSid and twAuthToken in the script with your credentials.
+
+   - OpenWeatherMap API: Sign up on the OpenWeatherMap website and obtain an API key. Replace owApiKey in the script with your API key.
+   - Twilio API: Sign up on the Twilio website and obtain an Account SID and an Auth Token. Replace twAccountSid and twAuthToken in the script with your credentials.
 
 3. Configure the location:
-    - Set the latitude (MY_LAT) and longitude (MY_LONG) variables in the script to the coordinates of the desired location.
+
+   - Set the latitude (MY_LAT) and longitude (MY_LONG) variables in the script to the coordinates of the desired location.
 
 4. Run the script:
 
-    ```bash
-    python main.py
-    ```
+   ```bash
+   python main.py
+   ```
 
 The script will check the weather forecast and send an SMS alert if rain is expected.
 
 ## Modules
+
 The required modules are imported at the beginning of the script:
 
 - requests: Used to make HTTP requests to the OpenWeatherMap API.
 - Client (from twilio.rest): The Twilio client class for sending SMS messages.
 - os: Used for environment variable handling (not currently used in this script).
-API and Location Data
+  API and Location Data
 - The OpenWeatherMap API endpoint, API key, and location data are set in this section. The parameters for the API request are stored in the parameters dictionary.
 
 ## Getting Data from OpenWeather
@@ -1754,7 +1765,7 @@ The script sends a GET request to the OpenWeatherMap API using the requests modu
 
 ## Working with Twilio
 
-The Twilio Account SID and Auth Token are set in this section. The Client object is created using the Twilio credentials. If willRain is True, the script sends an SMS message using the messages.create() method of the Twilio client. The sender phone number (from_) and recipient phone number (to) need to be specified in the messages.create() method. Replace them with the appropriate values.
+The Twilio Account SID and Auth Token are set in this section. The Client object is created using the Twilio credentials. If willRain is True, the script sends an SMS message using the messages.create() method of the Twilio client. The sender phone number (from\_) and recipient phone number (to) need to be specified in the messages.create() method. Replace them with the appropriate values.
 
 The message status is printed to the console.
 
@@ -1769,7 +1780,7 @@ The script relies on the following modules:
 
 - Ensure that you have an internet connection to make requests to the OpenWeatherMap API and send SMS messages using the Twilio API.
 - Check the usage limits and terms of use for both the OpenWeatherMap API and the Twilio API to ensure compliance.
-- The phone number used in the from_ and to fields must be in E.164 format (e.g., "+123456789").
+- The phone number used in the from\_ and to fields must be in E.164 format (e.g., "+123456789").
 - Additional configuration or modification may be required based on your specific use case or requirements.
 
 # 📈 Stock trading news alert
@@ -1781,24 +1792,26 @@ This is a Python script that retrieves stock price data using the Alpha Vantage 
 ## How to Use
 
 1. Ensure you have the necessary modules installed. You can install them using pip:
-    ```bash
-    pip install requests twilio
-    ```
+
+   ```bash
+   pip install requests twilio
+   ```
 
 2. Set up accounts and obtain the required API keys:
-    - Alpha Vantage API: Sign up on the Alpha Vantage website and obtain an API key. Replace avApiKey in the script with your API key.
-    - News API: Sign up on the News API website and obtain an API key. Replace newsApiKey in the script with your API key.
-    - Twilio API: Sign up on the Twilio website and obtain an Account SID and an Auth Token. Replace twAccountSid and twAuthToken in the script with your credentials.
+   - Alpha Vantage API: Sign up on the Alpha Vantage website and obtain an API key. Replace avApiKey in the script with your API key.
+   - News API: Sign up on the News API website and obtain an API key. Replace newsApiKey in the script with your API key.
+   - Twilio API: Sign up on the Twilio website and obtain an Account SID and an Auth Token. Replace twAccountSid and twAuthToken in the script with your credentials.
 3. Configure the company details:
-    - Set the stock symbol (STOCK) and company name (COMPANY_NAME) variables in the script to the desired values.
+
+   - Set the stock symbol (STOCK) and company name (COMPANY_NAME) variables in the script to the desired values.
 
 4. Run the script:
 
-    ```bash
-    python main.py
-    ```
+   ```bash
+   python main.py
+   ```
 
-    The script will retrieve the stock price data, news articles, and send an SMS alert with the stock price change and news details.
+   The script will retrieve the stock price data, news articles, and send an SMS alert with the stock price change and news details.
 
 ## Modules
 
@@ -1828,7 +1841,7 @@ The News API key, language, sorting, and other parameters are set in this sectio
 
 ## Working with Twilio
 
-The Twilio Account SID and Auth Token are set in this section. The Client object is created using the Twilio credentials. The script sends an SMS message for each news article using the messages.create() method of the Twilio client. The sender phone number (from_) and recipient phone number (to) need to be specified in the messages.create() method. Replace them with the appropriate values.
+The Twilio Account SID and Auth Token are set in this section. The Client object is created using the Twilio credentials. The script sends an SMS message for each news article using the messages.create() method of the Twilio client. The sender phone number (from\_) and recipient phone number (to) need to be specified in the messages.create() method. Replace them with the appropriate values.
 
 The message status is printed to the console.
 
@@ -1847,7 +1860,7 @@ The script relies on the following modules:
 
 - Ensure that you have an internet connection to make requests to the Alpha Vantage and News APIs and send SMS messages using the Twilio API.
 - Check the usage limits and terms of use for the Alpha Vantage API, News API, and Twilio API to ensure compliance.
-- The phone number used in the from_ and to fields must be in E.164 format (e.g., "+123456789").
+- The phone number used in the from\_ and to fields must be in E.164 format (e.g., "+123456789").
 - Additional configuration or modification may be required based on your specific use case or requirements.
 
 # 🔂 Habit tracking
@@ -1865,7 +1878,6 @@ To run this project, follow the steps below:
 ```bash
 pip install requests
 ```
-
 
 2. Set up a Pixela account by visiting the official website: [Pixela](https://pixe.la/).
 
@@ -1916,12 +1928,13 @@ This project allows you to track your exercises and log them into a Google Sheet
 To run this project, follow the steps below:
 
 1. Install the `requests` module if it is not already installed. You can install it using pip:
-pip install requests
+   pip install requests
 
 vbnet
 Copy code
 
 2. Obtain the necessary API credentials:
+
 - **Nutritionix API**: Visit the [Nutritionix API website](https://www.nutritionix.com/business/api) and create an account. Retrieve your API ID and API Key.
 - **Sheety API**: Visit the [Sheety API website](https://sheety.co/) and create an account. Create a new project and get your Bearer Token.
 
@@ -1941,10 +1954,6 @@ The `shEndpoint` variable holds the API endpoint URL for the Sheety API. The `be
 
 This project relies on the `requests` module for making HTTP requests. Ensure that you have it installed before running the code.
 
----
-
-This project is developed using Python and the `requests` module. For more details on the Nutritionix API and Sheety API and their functionalities, refer to the official documentation:
-
 - [Nutritionix API Documentation](https://www.nutritionix.com/business/api)
 - [Sheety API Documentation](https://sheety.co/docs/)
 
@@ -1954,12 +1963,12 @@ This project aims to provide a list of 100 movies that you must watch. The list 
 
 ![100 movies to watch](Images/100_movies.gif)
 
-
 ## Getting Started
 
 To run this project, follow the steps below:
 
 1. Install the required dependencies:
+
    - `requests`: Install it using pip:
      ```
      pip install requests
@@ -1984,9 +1993,67 @@ The movie titles are stored in the `iaMoviesList` list. Finally, the script writ
 ## Dependencies
 
 This project relies on the following dependencies:
+
 - `requests`: Used for making HTTP requests to fetch the webpage content.
 - `beautifulsoup4`: Used for parsing the HTML content and extracting the movie titles.
 
 Make sure you have these dependencies installed before running the script.
 
-This project is developed using Python and the `requests` and `beautifulsoup4` libraries. Feel free to modify or enhance the README file according to your project's specific details and requirements.
+# Billboard Top 100 Songs Scraper and Spotify Playlist Creator
+
+This project aims to scrape the Billboard Top 100 songs for a specific date and create a private playlist for those songs on Spotify.
+
+![The musical time machine](Images/the_musical_time_machine.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the required dependencies:
+
+   - `requests`: Install it using pip:
+     ```
+     pip install requests
+     ```
+   - `beautifulsoup4`: Install it using pip:
+     ```
+     pip install beautifulsoup4
+     ```
+   - `spotipy`: Install it using pip:
+     ```
+     pip install spotipy
+     ```
+
+2. Set up Spotify API:
+
+   - Create a Spotify Developer account and create a new app.
+   - Obtain the client ID and client secret for the app.
+   - Set the redirect URI to `http://example.com`.
+   - Add `http://example.com` to the app's Redirect URIs whitelist.
+   - Update the `spId` and `spCs` variables in the script with your client ID and client secret.
+
+3. Run the script. It will prompt you to enter the date in the format `yyyy-mm-dd` for which you want to scrape the Billboard Top 100 songs.
+
+4. The script will scrape the Billboard website for the songs of the specified date and extract their details.
+
+5. It will then authenticate with the Spotify Web API using the client ID and client secret.
+
+6. The script will search Spotify for the songs and retrieve their URIs.
+
+7. It will create a new private playlist on Spotify using the specified date and the Billboard songs.
+
+## Modules Used
+
+- `requests`: Used to make HTTP requests to fetch the Billboard website's HTML content.
+- `BeautifulSoup` from `bs4`: Used for parsing the HTML content and extracting the song details.
+- `spotipy` with `SpotifyOAuth`: Used for authenticating with the Spotify Web API and performing operations like searching songs and creating playlists.
+
+## Dependencies
+
+This project relies on the following dependencies:
+
+- `requests`: Used for making HTTP requests to fetch the Billboard website's HTML content.
+- `beautifulsoup4`: Used for parsing the HTML content and extracting the song details.
+- `spotipy`: Used for authenticating with the Spotify Web API and performing Spotify-related operations.
+
+Make sure you have these dependencies installed before running the script.
