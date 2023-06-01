@@ -2150,3 +2150,44 @@ To run this project, follow the steps below:
 ## Dependencies
 
 This project relies on the `selenium` library and a WebDriver compatible with your browser. Make sure you have installed the appropriate WebDriver and the `selenium` library before running the script.
+
+# 🤖 Automating job applications
+
+This project utilizes Selenium WebDriver to automate the process of applying for jobs on LinkedIn with the "Easy Apply" feature.
+
+![Automating job applications](Images/automating_job_applications.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the required dependencies:
+   - `selenium`: Install it using pip:
+     ```
+     pip install selenium
+     ```
+   - Download the appropriate WebDriver for your browser. In this project, the Chrome WebDriver is used. Make sure to download the WebDriver compatible with your browser version.
+
+2. Set up the LinkedIn account details:
+   - Update the `email` and `password` variables with your LinkedIn account credentials.
+
+3. Set up the WebDriver:
+   - Update the `chromeDriverPath` variable with the path to the Chrome WebDriver on your system.
+
+4. Run the script. It will launch the LinkedIn website, sign in with your credentials, search for Python developer jobs, filter for remote jobs, and apply for the first job with the "Easy Apply" feature.
+
+5. The script incorporates explicit waits using the `time.sleep()` function to ensure that each step completes before moving on to the next. You can modify the sleep durations according to your system and network speed.
+
+6. After the application submission, the browser will close automatically.
+
+## Modules Used
+
+- `webdriver` from `selenium`: Used for automating web browsers.
+- `Service` from `selenium.webdriver.chrome.service`: Used to start the Chrome WebDriver service.
+- `By` from `selenium.webdriver.common.by`: Used to locate elements on the web page.
+- `Keys` from `selenium.webdriver.common.keys`: Used to simulate keyboard keys.
+- `time`: Used for time-related operations.
+
+## Dependencies
+
+This project relies on the `selenium` library and a WebDriver compatible with your browser. Make sure you have installed the appropriate WebDriver and the `selenium` library before running the script.
