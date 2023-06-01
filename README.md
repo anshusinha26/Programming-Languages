@@ -1221,3 +1221,30 @@ The data.txt file contains the highscore data for the game. It is a simple text 
 To run the Snake Game, execute the main.py file. The game window will open, and you can control the snake using the arrow keys. The objective is to eat the food and avoid collisions with walls and the snake's body. The score and highscore will be displayed on the top of the screen. The game will end if the snake hits the wall or collides with its own body. You can click on the screen to exit the game.
 
 Note: Make sure that the necessary modules (turtle, random) are installed in your Python environment.
+
+# 🏓 Pong Game
+
+This is a simple implementation of the classic Pong game using the Turtle graphics module in Python. The game features two paddles controlled by the players and a ball that bounces off the paddles and walls. The objective is to prevent the ball from passing your paddle and score points by making the ball pass the opponent's paddle.
+
+![Pong game](Images/pong_game.gif)
+
+## Getting Started
+
+To run the game, make sure you have Python installed on your system. Clone the repository or download the source code files. The game requires the Turtle module, which is included in the standard library.
+
+## Running the Game
+
+To start the game, run the main.py file. This will open a window where the game is played. The left paddle is controlled by the "w" and "s" keys, and the right paddle is controlled by the up and down arrow keys. The game continues until one of the players reaches the maximum score.
+
+## Files
+
+The project consists of the following files:
+
+- main.py: This file contains the main code for running the game. It sets up the game window, creates the paddles and ball, manages the game loop, and handles user input.
+- paddle.py: This file contains the Paddle class, which represents a paddle in the game. It handles the movement of the paddle based on user input.
+- ball.py: This file contains the Ball class, which represents the ball in the game. It handles the movement of the ball and bouncing off the paddles and walls.
+scoreboard.py: This file contains the Scoreboard class, which manages the scores of the players and displays them on the screen.
+
+## Customization
+
+You can customize various aspects of the game, such as the window size, paddle speed, ball speed, and scoring system, by modifying the variables in the code.
