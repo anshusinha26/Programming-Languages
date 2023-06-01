@@ -398,3 +398,74 @@ Are there any other bidders? Type 'y' for 'yes' or 'n' for 'no': n
 The winner is Jane with a bid of ₹7000
 ```
 
+# 🧮 Calculator
+
+This program is a simple calculator implemented in Python. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+```bash
+ _____________________
+|  _________________  |
+| | JO           0. | |
+| |_________________| |
+|  ___ ___ ___   ___  |
+| | 7 | 8 | 9 | | + | |
+| |___|___|___| |___| |
+| | 4 | 5 | 6 | | - | |
+| |___|___|___| |___| |
+| | 1 | 2 | 3 | | x | |
+| |___|___|___| |___| |
+| | . | 0 | = | | / | |
+| |___|___|___| |___| |
+|_____________________|
+```
+
+## Usage
+
+calculator.py
+
+The calculator.py file contains the main program logic for the calculator. It includes the following functions:
+
+- add(num1, num2): This function takes two numbers as input and returns their sum.
+- sub(num1, num2): This function takes two numbers as input and returns their difference.
+- mul(num1, num2): This function takes two numbers as input and returns their product.
+- div(num1, num2): This function takes two numbers as input and returns their division.
+
+The calc() function is the main entry point of the program. It prompts the user for the first number and the operator symbol (+, -, *, /). It then asks for the next number and performs the corresponding operation. The result is displayed, and the user can choose to continue with the result or start a new calculation.
+
+## Getting Started
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+
+## Running the Program
+
+To run the program, execute the following command:
+
+```bash
+python calculator.py
+```
+
+Follow the prompts in the console to enter the numbers and select the desired operation. The calculator will perform the calculation and display the result. You can choose to continue using the result for further calculations or start a new calculation.
+
+## Example
+
+Here is an example interaction with the calculator:
+
+```bash
+What's the first number?: 5
++
+-
+*
+/
+What's the next number?: 3
+5 + 3 = 8
+Type 'y' to continue calculating with 8, or type 'n' to start a new calculation: y
++
+-
+*
+/
+What's the next number?: 2
+8 * 2 = 16
+Type 'y' to continue calculating with 16, or type 'n' to start a new calculation: n
+```
