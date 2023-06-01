@@ -1710,3 +1710,64 @@ Tkinter: It is the standard GUI library for Python. It is included in most Pytho
 - The application uses the Open Trivia Database API to fetch the quiz questions. Ensure that you have an internet connection to retrieve the data.
 - The images for the "True" and "False" buttons are assumed to be located in an images folder within the project directory. Make sure to place the images accordingly.
 - The main.py script creates an instance of the QuizInterface class, which opens the quiz window and starts the quiz. Uncomment the while loop in main.py and comment out the lines below it if you want to run the quiz in the console instead of using the graphical user interface.
+
+# ⛈️ Weather alert app
+
+This is a simple Python script that sends a rain alert message using the Twilio API and the OpenWeatherMap API. The script checks the weather forecast for a specified location and sends an SMS message if rain is expected.
+
+![Weather alert app](Images/weather_alert_app.gif)
+## How to Use
+
+1. Ensure you have the necessary modules installed. You can install them using pip:
+
+    ```bash
+    pip install requests twilio
+    ```
+
+2. Set up accounts and obtain the required API keys:
+    - OpenWeatherMap API: Sign up on the OpenWeatherMap website and obtain an API key. Replace owApiKey in the script with your API key.
+    - Twilio API: Sign up on the Twilio website and obtain an Account SID and an Auth Token. Replace twAccountSid and twAuthToken in the script with your credentials.
+
+3. Configure the location:
+    - Set the latitude (MY_LAT) and longitude (MY_LONG) variables in the script to the coordinates of the desired location.
+
+4. Run the script:
+
+    ```bash
+    python main.py
+    ```
+
+The script will check the weather forecast and send an SMS alert if rain is expected.
+
+## Modules
+The required modules are imported at the beginning of the script:
+
+- requests: Used to make HTTP requests to the OpenWeatherMap API.
+- Client (from twilio.rest): The Twilio client class for sending SMS messages.
+- os: Used for environment variable handling (not currently used in this script).
+API and Location Data
+- The OpenWeatherMap API endpoint, API key, and location data are set in this section. The parameters for the API request are stored in the parameters dictionary.
+
+## Getting Data from OpenWeather
+
+The script sends a GET request to the OpenWeatherMap API using the requests module. It retrieves the hourly weather forecast data for the specified location. The script then checks the weather conditions for the next 12 hours and sets the willRain variable to True if rain is expected.
+
+## Working with Twilio
+
+The Twilio Account SID and Auth Token are set in this section. The Client object is created using the Twilio credentials. If willRain is True, the script sends an SMS message using the messages.create() method of the Twilio client. The sender phone number (from_) and recipient phone number (to) need to be specified in the messages.create() method. Replace them with the appropriate values.
+
+The message status is printed to the console.
+
+## Dependencies
+
+The script relies on the following modules:
+
+- requests: Used for making HTTP requests. Install it using pip install requests.
+- twilio: The official Twilio Python library. Install it using pip install twilio.
+
+## Note
+
+- Ensure that you have an internet connection to make requests to the OpenWeatherMap API and send SMS messages using the Twilio API.
+- Check the usage limits and terms of use for both the OpenWeatherMap API and the Twilio API to ensure compliance.
+- The phone number used in the from_ and to fields must be in E.164 format (e.g., "+123456789").
+- Additional configuration or modification may be required based on your specific use case or requirements.
