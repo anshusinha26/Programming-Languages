@@ -1849,3 +1849,58 @@ The script relies on the following modules:
 - Check the usage limits and terms of use for the Alpha Vantage API, News API, and Twilio API to ensure compliance.
 - The phone number used in the from_ and to fields must be in E.164 format (e.g., "+123456789").
 - Additional configuration or modification may be required based on your specific use case or requirements.
+
+# 🔂 Habit tracking
+
+This project demonstrates the integration of the Pixela API using the Python `requests` module. It provides functionality to interact with the Pixela API, including creating a user, creating a graph, making data entries, updating data entries, and deleting data entries.
+
+![Habit tracking](Images/habit_tracking.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the `requests` module if it is not already installed. You can install it using pip:
+
+```bash
+pip install requests
+```
+
+
+2. Set up a Pixela account by visiting the official website: [Pixela](https://pixe.la/).
+
+3. Replace the `USERNAME`, `TOKEN`, and `GRAPH_ID` constants in the code with your own credentials. These values are used to authenticate and interact with the Pixela API.
+
+4. Uncomment the code sections that you want to run. Each section is marked with a comment and corresponds to a specific functionality.
+
+## Usage
+
+### Working with Pixela
+
+The `pixelaEndpoint` constant holds the base URL for the Pixela API. The `pixelaParameters` dictionary contains the parameters required to create a new user. Uncomment the code section to create a new user by sending a POST request to the Pixela API.
+
+### Working with the Graph
+
+The `graphEndpoint` constant holds the URL for creating a new graph. The `graphParameters` dictionary contains the parameters required to create a new graph. Uncomment the code section to create a new graph by sending a POST request to the Pixela API.
+
+### Making a Data Entry
+
+The `pixelDataCreationEndpoint` constant holds the URL for making a new data entry. The `pixelDataCreationParameters` dictionary contains the parameters required to create a new data entry. Uncomment the code section to make a new data entry by sending a POST request to the Pixela API.
+
+### Updating a Data Entry
+
+The `updateEndpoint` constant holds the URL for updating a data entry. The `updateParameters` dictionary contains the parameters required to update a data entry. Uncomment the code section to update a data entry by sending a PUT request to the Pixela API.
+
+### Deleting a Data Entry
+
+The `deleteEndpoint` constant holds the URL for deleting a data entry. Uncomment the code section to delete a data entry by sending a DELETE request to the Pixela API.
+
+### Working with Data Entries
+
+The `workWithData()` function provides an interactive way to work with data entries. It prompts the user to choose an action (make entry, update entry, or delete entry) and performs the corresponding operation by making requests to the Pixela API.
+
+## Dependencies
+
+This project relies on the `requests` module for making HTTP requests. Ensure that you have it installed before running the code.
+
+This project is developed using Python and the `requests` module. For more details on the Pixela API and its functionality, refer to the official documentation: [Pixela API Documentation](https://docs.pixe.la/)
