@@ -1292,3 +1292,30 @@ For each name, the program will replace the [name] placeholder in the letter wit
 ## Customization
 
 You can customize the project by modifying the content of the starting_letter.txt file and the list of names in the invited_names.txt file. Make sure to follow the format and placeholders correctly to ensure the replacement is done accurately.
+
+# 🇮🇳 India's States Game
+
+This is a game that tests your knowledge of the states in India. The objective of the game is to correctly guess the names of the states on the map. The game provides you with the map of India, and you have to input the names of the states.
+
+![India states game](Images/india_states_game.gif)
+
+## Getting Started
+
+To play the game, make sure you have Python installed on your system. Clone the repository or download the source code files. The game requires the following dependencies:
+
+- turtle
+- pandas
+
+You also need the map image file ("Indian_Political_Map_March_2022.gif") and the state data file ("indianStates.csv") to run the game.
+
+## Running the Game
+
+To start the game, run the main.py file. The game will open a window with the map of India. You need to input the names of the states in the prompt and press Enter. If you guess the correct state name, it will be displayed on the map. The game will keep track of the number of states you have guessed correctly.
+
+If you want to exit the game, you can enter "Exit" in the prompt. The game will save the list of states that you have not answered in a file named "MissingStates.csv".
+
+## Customization
+
+You can modify the game by changing the map image file or the state data file. Make sure the map image file is in GIF format and the state data file follows the required format (e.g., "indianStates.csv").
+
+You can also customize the appearance of the game by modifying the constants such as ALIGNMENT and FONT in the code.
