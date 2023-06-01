@@ -405,7 +405,7 @@ This program is a simple calculator implemented in Python. It allows users to pe
 ```bash
  _____________________
 |  _________________  |
-| | JO           0. | |
+| | AS           0. | |
 | |_________________| |
 |  ___ ___ ___   ___  |
 | | 7 | 8 | 9 | | + | |
