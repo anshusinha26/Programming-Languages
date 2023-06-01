@@ -1366,3 +1366,34 @@ The converted distance will be displayed in the label next to the "Km" text.
 ## Customization
 
 You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the input field, button, and labels. You can adjust the font, padding, and other properties of the elements to fit your preferences.
+
+# Pomodoro
+
+The Pomodoro Timer is a productivity tool that helps you stay focused and manage your time effectively using the Pomodoro Technique. The program is built using the Tkinter module in Python.
+
+![Pomodoro](Images/pomodoro.gif)
+
+## Getting Started
+
+To run the program, make sure you have Python installed on your system. Clone the repository or download the source code files. The program requires the following dependencies:
+
+- tkinter (included in Python standard library)
+- math (included in Python standard library)
+
+You will also need an image file named "tomato.png" in the same directory as the source code file. This image is used to display a tomato icon in the user interface.
+
+## Usage
+
+The Pomodoro Timer follows the Pomodoro Technique, which consists of work sessions and short breaks. Here's how you can use the program:
+
+1. The timer starts with a work session of 25 minutes. You can customize the work session duration by modifying the WORK_MIN constant.
+2. After the work session, a short break of 5 minutes is taken. You can customize the short break duration by modifying the SHORT_BREAK_MIN constant.
+3. After every 4 work sessions, a long break of 20 minutes is taken. You can customize the long break duration by modifying the LONG_BREAK_MIN constant.
+4. During each session, the timer will count down the time and display it in the format "MM:SS".
+After each work session, a checkmark ("✔") will be displayed in the UI to track the completed sessions.
+5. You can start the timer by clicking the "Start" button.
+6. You can reset the timer and clear the checkmarks by clicking the "Reset" button.
+
+## Customization
+
+You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the canvas, labels, and buttons. You can adjust the font, padding, colors, and other properties of the elements to fit your preferences.
