@@ -1518,3 +1518,69 @@ The Password Manager relies on the following dependencies:
 ```bash
 pip install pyperclip
 ```
+
+# 🂠 Flashy
+
+Flashy is a flashcard application built using Python and the Tkinter module. It helps users learn and practice vocabulary by presenting random French words and their English translations.
+
+![Flash card app](Images/flash_card_app.gif)
+
+## Features
+
+- Flashcard flipping: Flip the flashcard to reveal the English translation of a French word.
+- Random word generation: Randomly select a French word from a provided dataset.
+- Progress tracking: Remove known words from the dataset and store them separately.
+- User-friendly interface: Simple and intuitive user interface for easy interaction.
+
+## Prerequisites
+
+Before running Flashy, make sure you have the following installed:
+
+Python: Flashy is written in Python. You can download and install Python from the official website: python.org
+
+Pandas: The Pandas library is used to read and manipulate the dataset. Install it using the following command:
+```bash
+pip install pandas
+```
+## Getting Started
+
+To get started with Flashy, follow these steps:
+
+- Clone the repository or download the source code files.
+- Place your dataset in CSV format in the "data" folder with the name "french_words.csv". The dataset should have columns named "French" "English" for French words and their English translations, respectively.
+- Open a terminal or command prompt and navigate to the project directory.
+
+Run the following command to start Flashy:
+
+```bash
+python flashy.py
+```
+
+## Usage
+
+- Flashcards: Flashy will display a flashcard with a French word. After a few seconds, it will automatically flip the flashcard to reveal the English translation.
+- Known Words: If you know the word on the flashcard, click the "Right" button to remove it from the dataset and move to the next word.
+- Unknown Words: If you don't know the word on the flashcard, click the "Wrong" button to remove it temporarily from the dataset and move to the next word. The unknown words will be stored separately and can be reviewed later.
+
+## Customization
+
+You can customize Flashy by modifying the following:
+
+- Background Color: The BACKGROUND_COLOR constant defines the background color of the application. You can modify it to change the color scheme.
+- Fonts: The FONT_LANG and FONT_WORD constants define the fonts used for language and word texts, respectively. You can modify them to change the font styles, sizes, and weights.
+- Images: Flashy uses images for the flashcard, "Right" button, and "Wrong" button. Replace the image files in the "images" folder with your own images to customize the appearance.
+## Security
+
+Flashy does not handle sensitive user data or interact with external systems, so there are no specific security considerations.
+
+## Dependencies
+
+Flashy relies on the following dependencies:
+
+- Tkinter: The Tkinter module is used to create the user interface. It is included in the Python standard library.
+- Pandas: The Pandas library is used to read and manipulate the dataset. 
+
+Install it using the following command:
+```bash
+pip install pandas
+```
