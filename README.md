@@ -2110,3 +2110,43 @@ This project relies on the following dependencies:
 - `lxml`: Used as the parser for BeautifulSoup.
 
 Make sure you have these dependencies installed before running the script.
+
+# 🤖 Automated Cookie Clicker
+
+This project uses Selenium WebDriver to automate the process of clicking the cookie in the Cookie Clicker game and buying items from the store.
+
+![Automated cookie clicker](Images/cookie_clicker.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the required dependencies:
+   - `selenium`: Install it using pip:
+     ```
+     pip install selenium
+     ```
+   - Download the appropriate WebDriver for your browser. In this project, the Chrome WebDriver is used. Make sure to download the WebDriver compatible with your browser version.
+
+2. Set up the WebDriver:
+   - Update the `chromeDriverPath` variable with the path to the Chrome WebDriver on your system.
+
+3. Run the script. It will launch the Cookie Clicker game in a new browser window and start automatically clicking the cookie to generate cookies. It will also periodically buy items from the store to increase the cookie production.
+
+4. The script will run for 30 seconds by default, but you can modify the `totalTime` variable to change the duration.
+
+5. At the end of the execution, the script will print the "count per second" value, which represents the number of cookies generated per second during the runtime.
+
+6. Finally, the browser will be closed automatically.
+
+## Modules Used
+
+- `webdriver` from `selenium`: Used for automating web browsers.
+- `Service` from `selenium.webdriver.chrome.service`: Used to start the Chrome WebDriver service.
+- `By` from `selenium.webdriver.common.by`: Used to locate elements on the web page.
+- `time`: Used for time-related operations.
+- `random`: Used for generating random numbers.
+
+## Dependencies
+
+This project relies on the `selenium` library and a WebDriver compatible with your browser. Make sure you have installed the appropriate WebDriver and the `selenium` library before running the script.
