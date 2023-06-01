@@ -378,9 +378,9 @@ This project implements a simple secret auction program using Python. The progra
 
 ## Usage
 
-auction.py
+main.py
 
-The auction.py file contains the main program logic for the secret auction. It includes the following functions:
+The main.py file contains the main program logic for the secret auction. It includes the following functions:
 
     auction(): This function prompts the user for their name and bid amount, and stores them as key-value pairs in the auctionMembers dictionary.
     The program starts by printing the program logo. It then calls the auction() function to collect the bids from the participants. After all bids are entered, the program determines the winner with the highest bid and displays the result.
@@ -440,9 +440,9 @@ This program is a simple calculator implemented in Python. It allows users to pe
 
 ## Usage
 
-calculator.py
+main.py
 
-The calculator.py file contains the main program logic for the calculator. It includes the following functions:
+The main.py file contains the main program logic for the calculator. It includes the following functions:
 
 - add(num1, num2): This function takes two numbers as input and returns their sum.
 - sub(num1, num2): This function takes two numbers as input and returns their difference.
@@ -570,9 +570,9 @@ This is a simple Higher Lower game implemented in Python. The program presents t
 
 ## Usage
 
-higherlower.py
+main.py
 
-The higherlower.py file contains the main program logic for the Higher Lower game. It includes the following features:
+The main.py file contains the main program logic for the Higher Lower game. It includes the following features:
 
 - The logo variable contains an ASCII art logo that is displayed at the start of the game.
 - The vs variable contains an ASCII art representation of "vs" to display between the two data items.
