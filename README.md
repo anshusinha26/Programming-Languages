@@ -1248,3 +1248,29 @@ scoreboard.py: This file contains the Scoreboard class, which manages the scores
 ## Customization
 
 You can customize various aspects of the game, such as the window size, paddle speed, ball speed, and scoring system, by modifying the variables in the code.
+
+# 🐢 Turtle Crossing Game
+
+This is a simple implementation of the Turtle Crossing game using the Turtle graphics module in Python. The game features a player controlled by the user and cars moving horizontally on the screen. The objective is to help the turtle cross the road without colliding with any of the cars.
+
+![Turtle crossing game](Images/turtle_crossing_game.gif)
+
+## Getting Started
+
+To run the game, make sure you have Python installed on your system. Clone the repository or download the source code files. The game requires the Turtle module, which is included in the standard library.
+
+## Running the Game
+
+To start the game, run the main.py file. This will open a window where the game is played. The turtle moves forward when the up arrow key is pressed. The game continues until the turtle reaches the end line or collides with a car. The level increases each time the turtle reaches the end line.
+
+## Files
+
+The project consists of the following files:
+
+main.py: This file contains the main code for running the game. It sets up the game window, creates the player, cars, and scoreboard, manages the game loop, and handles user input.
+player.py: This file contains the Player class, which represents the turtle in the game. It handles the movement of the turtle based on user input.
+cars.py: This file contains the Car class, which represents the cars in the game. It handles the creation and movement of the cars.
+scoreboard.py: This file contains the Scoreboard class, which manages the level and displays it on the screen. It also handles the game over condition.
+## Customization
+
+You can customize various aspects of the game, such as the window size, car speed, and scoring system, by modifying the variables in the code.
