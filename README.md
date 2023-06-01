@@ -1771,3 +1771,81 @@ The script relies on the following modules:
 - Check the usage limits and terms of use for both the OpenWeatherMap API and the Twilio API to ensure compliance.
 - The phone number used in the from_ and to fields must be in E.164 format (e.g., "+123456789").
 - Additional configuration or modification may be required based on your specific use case or requirements.
+
+# 📈 Stock trading news alert
+
+This is a Python script that retrieves stock price data using the Alpha Vantage API, news articles related to a specific company using the News API, and sends an SMS message with the stock price change and news details using the Twilio API.
+
+![Stock trading news alert](Images/stock_trading_news_alert.gif)
+
+## How to Use
+
+1. Ensure you have the necessary modules installed. You can install them using pip:
+    ```bash
+    pip install requests twilio
+    ```
+
+2. Set up accounts and obtain the required API keys:
+    - Alpha Vantage API: Sign up on the Alpha Vantage website and obtain an API key. Replace avApiKey in the script with your API key.
+    - News API: Sign up on the News API website and obtain an API key. Replace newsApiKey in the script with your API key.
+    - Twilio API: Sign up on the Twilio website and obtain an Account SID and an Auth Token. Replace twAccountSid and twAuthToken in the script with your credentials.
+3. Configure the company details:
+    - Set the stock symbol (STOCK) and company name (COMPANY_NAME) variables in the script to the desired values.
+
+4. Run the script:
+
+    ```bash
+    python main.py
+    ```
+
+    The script will retrieve the stock price data, news articles, and send an SMS alert with the stock price change and news details.
+
+## Modules
+
+The required modules are imported at the beginning of the script:
+
+- requests: Used to make HTTP requests to the Alpha Vantage and News APIs.
+- datetime and timedelta (from datetime): Used to manipulate dates.
+- Client (from twilio.rest): The Twilio client class for sending SMS messages.
+
+## Company Details
+
+The stock symbol (STOCK) and company name (COMPANY_NAME) variables are set in this section. Modify them with the appropriate values.
+
+## Getting the Dates
+
+The script calculates yesterday's and the day before yesterday's dates using the current date. These dates are used to retrieve the corresponding stock price data and news articles.
+
+## Alpha Vantage Data
+
+The Alpha Vantage API key, function, output size, and other parameters are set in this section. The script sends a GET request to the Alpha Vantage API using the requests module. It retrieves the daily adjusted stock price data for the specified stock symbol. The closing prices for yesterday and the day before yesterday are extracted from the response.
+
+The script calculates the maximum stock price and the difference between yesterday's and the day before yesterday's closing prices. It also calculates the stock price change percentage. The stock price condition is determined based on the price difference.
+
+## News Data
+
+The News API key, language, sorting, and other parameters are set in this section. The script sends a GET request to the News API using the requests module. It retrieves news articles related to the specified company from yesterday's date. The headline, brief, and URL of the first three articles are extracted from the response.
+
+## Working with Twilio
+
+The Twilio Account SID and Auth Token are set in this section. The Client object is created using the Twilio credentials. The script sends an SMS message for each news article using the messages.create() method of the Twilio client. The sender phone number (from_) and recipient phone number (to) need to be specified in the messages.create() method. Replace them with the appropriate values.
+
+The message status is printed to the console.
+
+## Example
+
+An example is provided at the end of the script, demonstrating the usage and expected output. You can uncomment and modify the example code as needed.
+
+## Dependencies
+
+The script relies on the following modules:
+
+- requests: Used for making HTTP requests. Install it using pip install requests.
+- twilio: The official Twilio Python library. Install it using pip install twilio.
+
+## Note
+
+- Ensure that you have an internet connection to make requests to the Alpha Vantage and News APIs and send SMS messages using the Twilio API.
+- Check the usage limits and terms of use for the Alpha Vantage API, News API, and Twilio API to ensure compliance.
+- The phone number used in the from_ and to fields must be in E.164 format (e.g., "+123456789").
+- Additional configuration or modification may be required based on your specific use case or requirements.
