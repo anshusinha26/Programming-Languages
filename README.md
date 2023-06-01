@@ -710,7 +710,7 @@ Money: $2.5
 What would you like? (espresso / latte / cappuccino): exit
 ```
 
-# 🤔 Quiz
+# 🤔❔ Quiz
 
 This readme provides an overview of the quiz project, including the main files and their functionality.
 
