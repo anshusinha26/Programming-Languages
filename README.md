@@ -1479,7 +1479,7 @@ pip install pyperclip
 Run the following command to start the Password Manager:
 
 ```bash
-python password_manager.py
+python main.py
 ```
 
 ## Usage
