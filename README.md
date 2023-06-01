@@ -1397,3 +1397,50 @@ After each work session, a checkmark ("✔") will be displayed in the UI to trac
 ## Customization
 
 You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the canvas, labels, and buttons. You can adjust the font, padding, colors, and other properties of the elements to fit your preferences.
+
+# 🔑 Password Manager
+
+The Password Manager is a simple application that allows users to store and manage their passwords securely. The program is built using the Tkinter module in Python.
+
+![Password manager](Images/password_manager.gif)
+
+## Getting Started
+
+To run the program, make sure you have Python installed on your system. Clone the repository or download the source code files. The program requires the following dependencies:
+
+- tkinter (included in Python standard library)
+- random (included in Python standard library)
+- pyperclip (install using pip install pyperclip)
+- json (included in Python standard library)
+
+You will also need an image file named "logo.png" in the same directory as the source code file. This image is used to display the logo in the user interface.
+
+## Usage
+
+The Password Manager provides the following features:
+
+1. Store password data for different websites.
+2. Generate secure passwords.
+3. Retrieve passwords for specific websites.
+
+To use the Password Manager, follow these steps:
+
+1. Run the program by executing the source code.
+2. Enter the website, email/username, and password for the respective fields.
+3. Click the "Add" button to store the data securely.
+4. To generate a secure password, click the "Generate Password" button. The generated password will be automatically inserted in the password field.
+5. To retrieve the password for a specific website, enter the website name in the website field and click the "Search" button. The program will display the email/username and password associated with that website.
+
+Note: The program stores the password data in a JSON file named "data.json" in the same directory as the source code file. Make sure to keep this file secure and backup it regularly.
+
+## Customization
+
+You can customize the program by modifying the constants, such as the font, layout, and colors of the GUI elements. You can also modify the password generation algorithm to fit your requirements.
+
+## Security
+
+While the Password Manager provides a convenient way to store and manage passwords, it's essential to follow good security practices:
+
+- Keep the "data.json" file secure and back it up regularly.
+- Use a strong master password to protect the Password Manager application.
+- Avoid storing sensitive information in plain text, and be cautious when copying passwords to the clipboard.
