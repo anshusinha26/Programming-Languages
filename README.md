@@ -555,3 +555,80 @@ You have 7 attempts remaining to guess the number.
 Make a guess: 42
 You got it! The answer was 42.
 ```
+
+# 🔺 Higher 🔻 Lower Game
+This is a simple Higher Lower game implemented in Python. The program presents two data items with descriptions and countries, and the player's objective is to guess which data item has more followers.
+
+```bash
+██╗  ██╗██╗ ██████╗ ██╗  ██╗███████╗██████╗     ██╗      ██████╗ ██╗    ██╗███████╗██████╗ 
+██║  ██║██║██╔════╝ ██║  ██║██╔════╝██╔══██╗    ██║     ██╔═══██╗██║    ██║██╔════╝██╔══██╗
+███████║██║██║  ███╗███████║█████╗  ██████╔╝    ██║     ██║   ██║██║ █╗ ██║█████╗  ██████╔╝
+██╔══██║██║██║   ██║██╔══██║██╔══╝  ██╔══██╗    ██║     ██║   ██║██║███╗██║██╔══╝  ██╔══██╗
+██║  ██║██║╚██████╔╝██║  ██║███████╗██║  ██║    ███████╗╚██████╔╝╚███╔███╔╝███████╗██║  ██║
+╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝    ╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
+```
+
+## Usage
+
+higherlower.py
+
+The higherlower.py file contains the main program logic for the Higher Lower game. It includes the following features:
+
+- The logo variable contains an ASCII art logo that is displayed at the start of the game.
+- The vs variable contains an ASCII art representation of "vs" to display between the two data items.
+- The data variable contains a list of data items, each with a name, description, and follower count.
+- The program generates two random data items from the data list and displays them with their descriptions and countries.
+- The player is prompted to guess which data item has more followers by typing 'A' for the first item or 'B' for the second item.
+- If the player's guess is correct, their score is incremented by 1, and a message with the current score is displayed.
+- If the player's guess is incorrect, the game ends, and a message with the final score is displayed.
+
+## Getting Started
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+
+## Running the Game
+
+To run the game, execute the following command:
+
+```bash
+python higherlower.py
+```
+
+Follow the prompts in the console to make your guess. The program will provide feedback on each guess and display your current score. If your guess is incorrect, the game will end, and your final score will be displayed.
+
+## Example
+
+Here is an example interaction with the game:
+
+```bash
+Compare A: Instagram, a social media platform, from United States.
+
+██╗   ██╗███████╗
+██║   ██║██╔════╝
+██║   ██║███████╗
+╚██╗ ██╔╝╚════██║
+ ╚████╔╝ ███████║
+  ╚═══╝  ╚══════╝
+
+Against B: TikTok, a short-form video app, from China.
+
+Who has more followers? Type 'A' or 'B': A
+You're right! Current score: 1
+
+Compare A: Facebook, a social networking site, from United States.
+
+██╗   ██╗███████╗
+██║   ██║██╔════╝
+██║   ██║███████╗
+╚██╗ ██╔╝╚════██║
+ ╚████╔╝ ███████║
+  ╚═══╝  ╚══════╝
+
+Against B: Twitter, a social media platform, from United States.
+
+Who has more followers? Type 'A' or 'B': B
+Sorry, that's wrong. Final score: 1
+```
+
