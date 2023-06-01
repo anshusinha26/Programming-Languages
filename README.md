@@ -1444,3 +1444,77 @@ While the Password Manager provides a convenient way to store and manage passwor
 - Keep the "data.json" file secure and back it up regularly.
 - Use a strong master password to protect the Password Manager application.
 - Avoid storing sensitive information in plain text, and be cautious when copying passwords to the clipboard.
+
+# 🔑 Password Manager 2.0
+
+The Password Manager is a simple application built using Python and the Tkinter module that allows users to store and manage their passwords securely.
+
+![Password manager](Images/password_manager_2.0.gif)
+
+## Features
+
+- Password generation: Generate secure passwords with a combination of letters, numbers, and symbols.
+- Data storage: Store website, email/username, and password data securely.
+- Data retrieval: Retrieve password data for specific websites.
+- User-friendly interface: Simple and intuitive user interface for easy interaction.
+
+## Prerequisites
+
+Before running the Password Manager, make sure you have the following installed:
+
+Python: The Password Manager is written in Python. You can download and install Python from the official website: python.org
+
+## Getting Started
+
+To get started with the Password Manager, follow these steps:
+
+1. Clone the repository or download the source code files.
+2. Open a terminal or command prompt and navigate to the project directory.
+3. Run the following command to install the required dependencies:
+
+```bash
+pip install pyperclip
+```
+
+Run the following command to start the Password Manager:
+
+```bash
+python password_manager.py
+```
+
+## Usage
+
+1. Generate Password: Click the "Generate Password" button to generate a secure password. The generated password will be automatically inserted in the password field.
+
+2. Add Password: Enter the website, email/username, and password in the respective fields. Click the "Add" button to store the data securely. If any field is left empty, a warning message will be displayed.
+
+3. Search Password: Enter the website name in the website field and click the "Search" button to retrieve the password for that website.
+
+4. If no data exists for the specified website, a warning message will be displayed.
+
+## Customization
+
+You can customize the Password Manager by modifying the following:
+
+- Fonts: The constant FONT defines the font used for labels and buttons. You can modify it to change the font style, size, and weight.
+- Logo: The Password Manager displays a logo image in the user interface. Replace the "logo.png" file with your own image file to change the logo.
+
+## Security
+
+While the Password Manager provides a convenient way to store and manage passwords, it's important to follow good security practices:
+
+- Use a strong master password to protect the Password Manager application.
+- Keep the "data.json" file secure and back it up regularly.
+- Avoid sharing your master password or the "data.json" file with others.
+- Be cautious when copying passwords to the clipboard, especially on shared or public computers.
+
+## Dependencies
+
+The Password Manager relies on the following dependencies:
+
+- Tkinter: The Tkinter module is used to create the user interface. It is included in the Python standard library.
+- Pyperclip: The Pyperclip module is used to copy generated passwords to the clipboard. Install it using the following command:
+
+```bash
+pip install pyperclip
+```
