@@ -2191,3 +2191,54 @@ To run this project, follow the steps below:
 ## Dependencies
 
 This project relies on the `selenium` library and a WebDriver compatible with your browser. Make sure you have installed the appropriate WebDriver and the `selenium` library before running the script.
+
+# 🤖 Internet Speed Twitter Complaint Bot
+
+This project is a Twitter complaint bot that checks the internet speed and tweets at the internet service provider if the speed is below the promised speed.
+
+![Internet speed twitter complain bot](Images/internet_speed_complaint.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the required dependencies:
+   - `selenium`: Install it using pip:
+     ```
+     pip install selenium
+     ```
+   - Download the appropriate WebDriver for your browser. In this project, the Chrome WebDriver is used. Make sure to download the WebDriver compatible with your browser version.
+
+2. Set up the Twitter account details:
+   - Update the `TWITTER_EMAIL`, `TWITTER_USERNAME`, and `TWITTER_PASSWORD` constants in the `twitterBot.py` file with your Twitter account credentials.
+
+3. Set up the WebDriver:
+   - Update the `CHROME_DRIVER_PATH` constant in the `twitterBot.py` file with the path to the Chrome WebDriver on your system.
+
+4. Run the `main.py` script. It will create an instance of the `InternetSpeedTwitterComplaintBot` class, get the internet speed, and compare it with the promised speed.
+   - If the internet speed is below the promised speed, it will automatically log in to Twitter and tweet at the internet service provider, mentioning the speed discrepancy.
+   - The tweet message will include the actual download and upload speeds, as well as the promised speeds.
+
+## Modules Used
+
+### `main.py`
+
+- `InternetSpeedTwitterComplaintBot` from `twitterBot`: Used to create an instance of the Internet Speed Twitter Complaint Bot.
+- `PROMISED_DOWN` and `PROMISED_UP` from `twitterBot`: Used to store the promised download and upload speeds.
+
+### `twitterBot.py`
+
+- `webdriver` from `selenium`: Used for automating web browsers.
+- `Service` from `selenium.webdriver.chrome.service`: Used to start the Chrome WebDriver service.
+- `By` from `selenium.webdriver.common.by`: Used to locate elements on the web page.
+- `Keys` from `selenium.webdriver.common.keys`: Used to simulate keyboard keys.
+- `time`: Used for time-related operations.
+
+## Constants Used
+
+- `CHROME_DRIVER_PATH`: Stores the path to the chromedriver executable.
+- `TWITTER_EMAIL`: Stores the Twitter account email.
+- `TWITTER_USERNAME`: Stores the Twitter account username.
+- `TWITTER_PASSWORD`: Stores the Twitter account password.
+- `PROMISED_DOWN`: Stores the promised download speed.
+- `PROMISED_UP`: Stores the promised upload speed.
