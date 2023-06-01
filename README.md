@@ -301,6 +301,25 @@ Enjoy playing Hangman!
 
 This project includes two files: main.py and cc.py. The main.py file implements a simple Caesar Cipher encryption and decryption program, while the cc.py file contains the logo for the program.
 
+```bash
+ ,adPPYba, ,adPPYYba,  ,adPPYba, ,adPPYba, ,adPPYYba, 8b,dPPYba,  
+a8"     "" ""     `Y8 a8P_____88 I8[    "" ""     `Y8 88P'   "Y8  
+8b         ,adPPPPP88 8PP"        `"Y8ba,  ,adPPPPP88 88          
+"8a,   ,aa 88,    ,88 "8b,   ,aa aa    ]8I 88,    ,88 88          
+ `"Ybbd8"' `"8bbdP"Y8  `"Ybbd8"' `"YbbdP"' `"8bbdP"Y8 88
+
+           88                                 
+           ""             88                                 
+                          88                                 
+ ,adPPYba, 88 8b,dPPYba,  88,dPPYba,   ,adPPYba, 8b,dPPYba,  
+a8"     "" 88 88P'    "8a 88P'    "8a a8P_____88 88P'   "Y8  
+8b         88 88       d8 88       88 8PP        88          
+"8a,   ,aa 88 88b,   ,a8" 88       88 "8b,   ,aa 88          
+ `"Ybbd8"' 88 88`YbbdP"'  88       88  `"Ybbd8"' 88          
+              88                                             
+              88  
+```
+
 ## Usage
 
 The main.py file contains the main program logic for the Caesar Cipher. It includes the following functions:
@@ -379,7 +398,7 @@ The program prompts the user to indicate whether there are any other bidders. En
 To run the program, execute the following command:
 
 ```bash
-python auction.py
+python main.py
 ```
 
 Follow the prompts in the console to enter the bidder's name and bid amount. If there are more bidders, enter "y" when prompted. Once all bids are entered, the program will display the winner with the highest bid. If no bid is entered or all bids are zero or negative, no winner will be declared.
@@ -443,7 +462,7 @@ The calc() function is the main entry point of the program. It prompts the user 
 To run the program, execute the following command:
 
 ```bash
-python calculator.py
+python main.py
 ```
 
 Follow the prompts in the console to enter the numbers and select the desired operation. The calculator will perform the calculation and display the result. You can choose to continue using the result for further calculations or start a new calculation.
@@ -468,4 +487,71 @@ Type 'y' to continue calculating with 8, or type 'n' to start a new calculation:
 What's the next number?: 2
 8 * 2 = 16
 Type 'y' to continue calculating with 16, or type 'n' to start a new calculation: n
+```
+
+# 🔢 The Number Guessing Game
+
+This is a simple number guessing game implemented in Python. The program generates a random number between 1 and 100, and the player's objective is to guess the correct number within a limited number of attempts.
+
+```bash
+ #####                                                        #     #                                    
+#     # #    # ######  ####   ####     ##### #    # ######    ##    # #    # #    # #####  ###### #####  
+#       #    # #      #      #           #   #    # #         # #   # #    # ##  ## #    # #      #    # 
+#  #### #    # #####   ####   ####       #   ###### #####     #  #  # #    # # ## # #####  #####  #    # 
+#     # #    # #           #      #      #   #    # #         #   # # #    # #    # #    # #      #####  
+#     # #    # #      #    # #    #      #   #    # #         #    ## #    # #    # #    # #      #   #  
+ #####   ####  ######  ####   ####       #   #    # ######    #     #  ####  #    # #####  ###### #    # 
+```
+
+## Usage
+
+main.py
+
+The main.py file contains the main program logic for the Number Guessing Game. It includes the following features:
+
+- The logo variable contains an ASCII art logo that is displayed at the start of the game.
+- The program prompts the player to choose a difficulty level: 'easy' or 'hard'.
+- In the 'easy' mode, the player has 10 attempts to guess the correct number.
+- In the 'hard' mode, the player has 5 attempts to guess the correct number.
+- After each guess, the program provides feedback to the player if their guess is too low or too high.
+- If the player guesses the correct number within the allotted attempts, they win the game.
+- If the player runs out of attempts without guessing the correct number, they lose the game.
+
+## Getting Started
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+
+## Running the Game
+
+To run the game, execute the following command:
+
+```bash
+python main.py
+```
+
+Follow the prompts in the console to choose the difficulty level and make guesses. The program will provide feedback on each guess and inform you if you win or lose the game.
+
+## Example
+
+Here is an example interaction with the game:
+
+```bash
+Welcome to The Number Guessing Game
+I'm thinking of a number between 1 and 100.
+Pssst, the correct answer is 42
+Chose a difficulty level. Type 'e' for easy and 'h' for hard: e
+You have 10 attempts remaining to guess the number.
+Make a guess: 50
+Too high.
+You have 9 attempts remaining to guess the number.
+Make a guess: 20
+Too low.
+You have 8 attempts remaining to guess the number.
+Make a guess: 35
+Too low.
+You have 7 attempts remaining to guess the number.
+Make a guess: 42
+You got it! The answer was 42.
 ```
