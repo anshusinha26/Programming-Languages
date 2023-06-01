@@ -1584,3 +1584,49 @@ Install it using the following command:
 ```bash
 pip install pandas
 ```
+
+# 📨 Automated Birthday Wisher
+
+This is an automated birthday wisher script written in Python. It checks if today matches a birthday in the birthdays.csv file, picks a random letter template, replaces the [NAME] placeholder with the person's actual name from the file, and sends the generated letter to the person's email address.
+
+![Automated birthday wisher](Images/automated_birthday_wisher.gif)
+
+## Prerequisites
+
+Before running the script, make sure you have the following:
+
+- Python: The script is written in Python. You can download and install Python from the official website: python.org
+- pandas: The pandas library is used to read and manipulate the CSV file. Install it using the following command:
+
+```bash
+pip install pandas
+```
+
+smtplib: The smtplib module is used to send emails. It is included in the Python standard library.
+
+## Usage
+
+To use the automated birthday wisher:
+
+1. Update the birthdays.csv file with the birthdays and corresponding information.
+2. The CSV file should have the following columns: name, email, month, and day.
+3. Each row represents a person's birthday, with the month and day indicating the date of the birthday.
+4. Provide the person's name, email address, and the month and day of their birthday in the respective columns.
+5. Run the script. It will automatically check if today matches a birthday in the birthdays.csv file.
+6. If there is a birthday match, the script will pick a random letter template from the letter_templates folder.
+7. The script will replace the [NAME] placeholder in the letter template with the person's actual name.
+8. Finally, the script will send the generated letter to the person's email address using the SMTP server.
+
+## Configuration
+
+Before running the script, you need to configure the following:
+
+- Email Settings: Update the myEmail and password variables with your email address and password. Make sure to use an email address that supports SMTP and allow access to less secure apps or generate an app password if required.
+- SMTP Server: The script uses the Gmail SMTP server by default. If you're using a different email provider, update the SMTP server settings in the smtplib.SMTP call.
+- Letter Templates: Add letter templates in plain text format to the letter_templates folder. Each letter template should have a placeholder [NAME] that will be replaced with the person's name.
+
+## Note
+
+- The script uses the datetime module to get the current date, so make sure your system date and time are correctly set.
+- The script sends the email using the Gmail SMTP server by default. If you're using a different email provider, you may need to update the SMTP server settings accordingly.
+- Ensure that your email account has the necessary permissions to send emails and that you comply with the email provider's policies and limitations.
