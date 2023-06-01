@@ -1341,3 +1341,28 @@ Note: The program only accepts letters of the alphabet. If you enter any other c
 ## Customization
 
 You can modify the program by changing the NATO phonetic alphabet data file. Make sure the file is in CSV format and follows the required format (e.g., "nato_phonetic_alphabet.csv").
+
+# 🔁 Miles to Kilometer Converter
+
+The Mile to Kilometer Converter is a simple graphical user interface (GUI) program that allows users to convert distances from miles to kilometers. The program is built using the Tkinter module in Python.
+
+![Miles to kilometer converter](Images/miles_to_kilometer_converter.gif)
+
+## Getting Started
+
+To run the program, make sure you have Python installed on your system. Clone the repository or download the source code files. The program requires the following dependency:
+
+tkinter (included in Python standard library)
+
+## Running the Program
+
+To use the program, run the main.py file. The program will open a window with an input field, a "Calculate" button, and a label to display the converted distance.
+
+Enter the distance in miles in the input field.
+
+Click the "Calculate" button to convert the miles to kilometers.
+The converted distance will be displayed in the label next to the "Km" text.
+
+## Customization
+
+You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the input field, button, and labels. You can adjust the font, padding, and other properties of the elements to fit your preferences.
