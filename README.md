@@ -237,8 +237,62 @@ while not at_goal():
         move()
 ```
 
-![Escaping the maze](Images/escaping_the_maze.png)
+![Escaping the maze](Images/escaping_the_maze.gif)
 
 In this example, the robot checks if the front is clear. If it is, the robot moves forward. If there is a wall in front, the robot turns left. This logic will continue until the robot reaches the goal.
 
 Please note that this is just an example, and the actual solution depends on the specific challenge you are working on.
+
+# 🧗🏿‍♂️ Hangman Game
+
+This is a simple implementation of the classic game Hangman. The program randomly selects a word from a predefined list, and the player has to guess the letters in the word to complete it before running out of lives.
+
+```bash
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+```
+
+## How to Play
+
+1. Run the main.py file.
+2. The program will display the Hangman ASCII art logo.
+3. It will then select a random word from the list of words.
+4. The word will be displayed as a series of underscores representing the letters.
+5. Guess a letter by entering it in the console.
+6. If the letter is correct, it will be revealed in the word.
+7. If the letter is incorrect, you will lose a life, and a part of the Hangman figure will be displayed.
+8. Continue guessing letters until you complete the word or run out of lives.
+9. If you complete the word, you win the game.
+10. If you run out of lives, you lose the game.
+
+## File Descriptions
+
+- main.py: The main program file that runs the Hangman game.
+- hangman.py: Contains the ASCII art representations of the Hangman figure at different stages.
+- words.py: Stores the list of words used for the game.
+
+## Prerequisites
+
+Python 3.x
+
+## How to Run
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+4. Run the following command:
+
+```bash
+python main.py
+```
+
+5. Follow the instructions in the console to play the game.
+
+Note: You can add or modify the words in the words.py file to customize the game's word bank.
+
+Enjoy playing Hangman!
