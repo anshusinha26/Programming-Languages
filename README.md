@@ -1635,7 +1635,7 @@ Before running the script, you need to configure the following:
 
 This is an ISS (International Space Station) overhead notifier project written in Python. It checks if the ISS is overhead your location during the night and sends an email notification with a random fact about the ISS.
 
-![ISS overhead notifier](Images/iss_overhead_notifier)
+![ISS overhead notifier](Images/iss_overhead_notifier.gif)
 
 ## Prerequisites
 
