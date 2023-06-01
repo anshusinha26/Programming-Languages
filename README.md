@@ -296,3 +296,49 @@ python main.py
 Note: You can add or modify the words in the words.py file to customize the game's word bank.
 
 Enjoy playing Hangman!
+
+# 🔐 Caesar Cipher
+
+This project includes two files: main.py and cc.py. The main.py file implements a simple Caesar Cipher encryption and decryption program, while the cc.py file contains the logo for the program.
+
+## Usage
+
+The main.py file contains the main program logic for the Caesar Cipher. It includes the following functions:
+
+    casesarCipher(command, message, shift): This function takes three arguments: command (either "e" for encoding or "d" for decoding), message (the text to be encoded or decoded), and shift (the number of positions to shift the characters). It performs the Caesar Cipher encryption or decryption based on the command and prints the encoded or decoded result.
+
+The program prompts the user to enter the command, message, and shift value. It then calls the casesarCipher function to process the input and display the result. After each encryption or decryption, the program asks if the user wants to go again. Entering "n" exits the program.
+
+## Getting Started
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+
+## Running the Program
+
+To run the program, execute the following command:
+
+```bash
+python main.py
+```
+Follow the prompts in the console to choose the command (encode or decode), enter the message, and specify the shift value. The program will display the encoded or decoded result and ask if you want to go again.
+
+## Example
+
+Here is an example interaction with the program:
+
+```bash
+Type 'e' for 'encode' or 'd' for 'decode': e
+Type your message (make sure to add only these symbols: space, !, @, #, $, &, ?): hello world
+Type the shift number (0-42): 5
+Here's the encoded result: mjqqt%ryj%wtaqi
+Type 'y' for 'yes' if you want to go again, else type 'n' for 'no': n
+Caesar Cipher says: 0mmb6w2bioiqvcbowwlbvqop?
+```
+
+Hint: Add all the numbers in the above message and use the result as the shift number to get the decrypted message of Caesar Cipher 😉
+
+
+
+
