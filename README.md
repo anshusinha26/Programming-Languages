@@ -1904,3 +1904,48 @@ The `workWithData()` function provides an interactive way to work with data entr
 This project relies on the `requests` module for making HTTP requests. Ensure that you have it installed before running the code.
 
 This project is developed using Python and the `requests` module. For more details on the Pixela API and its functionality, refer to the official documentation: [Pixela API Documentation](https://docs.pixe.la/)
+
+# 🚴🏻 Workout Tracking
+
+This project allows you to track your exercises and log them into a Google Sheet using the Nutritionix API and Sheety API. It uses the `requests` module to make HTTP requests and the `datetime` module to get the current date and time.
+
+![Workout tracking](Images/workout_tracking.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the `requests` module if it is not already installed. You can install it using pip:
+pip install requests
+
+vbnet
+Copy code
+
+2. Obtain the necessary API credentials:
+- **Nutritionix API**: Visit the [Nutritionix API website](https://www.nutritionix.com/business/api) and create an account. Retrieve your API ID and API Key.
+- **Sheety API**: Visit the [Sheety API website](https://sheety.co/) and create an account. Create a new project and get your Bearer Token.
+
+3. Replace the `nuApiId`, `nuApiKey`, and `shEndpoint` variables in the code with your own credentials. These values are used to authenticate and interact with the Nutritionix and Sheety APIs.
+
+4. Run the script and provide the exercise details when prompted. The script will make a request to the Nutritionix API to get the exercise information, and then log the exercise data into a Google Sheet using the Sheety API.
+
+## Working with the Nutritionix API
+
+The `nuApiId` and `nuApiKey` variables hold your Nutritionix API credentials. The `nuEndpoint` variable stores the API endpoint URL for making exercise queries. The `nuParameters` dictionary contains the parameters required to make a request to the API. The response from the API is stored in the `nuResponse` variable, and the exercise data is extracted from it.
+
+## Working with the Sheety API
+
+The `shEndpoint` variable holds the API endpoint URL for the Sheety API. The `bearerHeaders` dictionary contains the Bearer Token required for authentication. For each exercise retrieved from the Nutritionix API, the exercise data is formatted and sent as a POST request to the Sheety API to log it into the Google Sheet.
+
+## Dependencies
+
+This project relies on the `requests` module for making HTTP requests. Ensure that you have it installed before running the code.
+
+---
+
+This project is developed using Python and the `requests` module. For more details on the Nutritionix API and Sheety API and their functionalities, refer to the official documentation:
+
+- [Nutritionix API Documentation](https://www.nutritionix.com/business/api)
+- [Sheety API Documentation](https://sheety.co/docs/)
+
+Feel free to modify or enhance the README file according to your project's specific details and requirements.
