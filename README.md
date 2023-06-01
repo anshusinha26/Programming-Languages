@@ -1630,3 +1630,42 @@ Before running the script, you need to configure the following:
 - The script uses the datetime module to get the current date, so make sure your system date and time are correctly set.
 - The script sends the email using the Gmail SMTP server by default. If you're using a different email provider, you may need to update the SMTP server settings accordingly.
 - Ensure that your email account has the necessary permissions to send emails and that you comply with the email provider's policies and limitations.
+
+# 🛰️ ISS Overhead Notifier
+
+This is an ISS (International Space Station) overhead notifier project written in Python. It checks if the ISS is overhead your location during the night and sends an email notification with a random fact about the ISS.
+
+![ISS overhead notifier](Images/iss_overhead_notifier)
+
+## Prerequisites
+
+Before running the script, make sure you have the following:
+
+- Python: The script is written in Python. You can download and install Python from the official website: python.org
+- requests: The requests library is used to make HTTP requests to the ISS and sunrise-sunset APIs. Install it using the following command:
+```bash
+pip install requests
+```
+
+smtplib: The smtplib module is used to send emails. It is included in the Python standard library.
+
+## Usage
+
+To use the ISS overhead notifier:
+
+1. Update the following variables in the script:
+    - MY_LAT: Set the latitude of your location.
+    - MY_LNG: Set the longitude of your location.
+    - MY_EMAIL: Set your email address from which the notifications will be sent.
+    - PASSWORD: Set the password for your email address.
+    - receiver: Set the email address of the recipient.
+2. Create a file named facts.txt and add interesting facts about the ISS. Each fact should be on a separate line.
+3. Run the script. It will continuously check if the ISS is overhead your location during the night.
+4. If the ISS is overhead and it is night, the script will send an email notification to the specified recipient. The email will contain a random fact about the ISS.
+
+## Note
+
+- The script uses the requests module to fetch data from the ISS and sunrise-sunset APIs. Make sure you have an internet connection to retrieve the data.
+- The script uses the smtplib module to send email notifications. By default, it uses the Gmail SMTP server. If you're using a different email provider, you may need to update the SMTP server settings in the smtplib.SMTP call.
+- Ensure that your email account has the necessary permissions to send emails and that you comply with the email provider's policies and limitations.
+- The script sleeps for 60 seconds between each check. You can modify this interval based on your requirements.
