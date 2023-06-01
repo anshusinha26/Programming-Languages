@@ -1,59 +1,62 @@
+"""import statements"""
+import words
+import hangman
 import random
 
-#TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
-#Delete this line: word_list = ["ardvark", "baboon", "camel"]
-from hangman_words import word_list
+"""this print statement is used to print the logo from the hangman module"""
+print(hangman.logo)
 
-chosen_word = random.choice(word_list)
-word_length = len(chosen_word)
+"""this word variable stores the random generated word from the words list from the hangman module"""
+word = random.choice(words.words)
 
-end_of_game = False
-lives = 6
+"""this print function gives the generated word"""
+print(f"The answer is: {word}")
 
-#TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-from hangman_art import logo
-print(logo)
+"""this variable stores the hangman inital stages from the hangman module"""
+initialStage = hangman.initialStage
 
-#Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+"""this variable hold the list of stages from the hangman module"""
+stages = [hangman.stage1, hangman.stage2, hangman.stage3, hangman.stage4, hangman.stage5, hangman.stage6, hangman.stage7]
 
-#Create blanks
-display = []
-for _ in range(word_length):
-    display += "_"
+"""this variable hold the number of lives"""
+lives = 7
 
-while not end_of_game:
-    guess = input("Guess a letter: ").lower()
+"""this variable holds the number of _ generated which is equivalent to the number of characters of the randomly generated word"""
+blankSpaces = ["_" for i in word]
 
-    #TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
-    if guess in display:
-        print(f"You've already guessed {guess}")
+"""this variable holds the stage"""
+stage = initialStage
 
-    #Check guessed letter
-    for position in range(word_length):
-        letter = chosen_word[position]
-        #print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
-        if letter == guess:
-            display[position] = letter
+"""this variable is set to value of false"""
 
-    #Check if user is wrong.
-    if guess not in chosen_word:
-        #TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
-        print(f"You guessed {guess}, that's not in the word. You lose a life.")
-        
+endOfGame = False
+
+"""this loop will run until the game is not over"""
+while (endOfGame == False):
+    guess = input("Guess a letter: ")
+
+    if guess in word:
+        for i in range(len(word)):
+            if guess == word[i]:
+                blankSpaces[i] = guess
+
+        for i in blankSpaces:
+            print(i, end='')
+
+        print(stage)
+
+        if "_" not in blankSpaces:
+            print("You won!")
+            endOfGame = True
+
+    else :
+        print(f"You guessed {guess}, that's not in the world. You lose a life!")
+        for i in blankSpaces:
+            print(i, end='')
+        stage = stages[-lives]
         lives -= 1
+        print(stage)
+
         if lives == 0:
-            end_of_game = True
-            print("You lose.")
-
-    #Join all the elements in the list and turn it into a String.
-    print(f"{' '.join(display)}")
-
-    #Check if user has got all letters.
-    if "_" not in display:
-        end_of_game = True
-        print("You win.")
-
-    #TODO-2: - Import the stages from hangman_art.py and make this error go away.
-    from hangman_art import stages
-    print(stages[lives])
+            print("You lose!")
+            endOfGame = True
