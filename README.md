@@ -339,6 +339,62 @@ Caesar Cipher says: 0mmb6w2bioiqvcbowwlbvqop?
 
 Hint: Add all the numbers in the above message and use the result as the shift number to get the decrypted message of Caesar Cipher 😉
 
+# 👨🏻‍⚖️ The Secret Auction Program
 
+This project implements a simple secret auction program using Python. The program allows participants to enter their name and bid amount, and it determines the winner with the highest bid.
 
+```bash
+                         ___________
+                         \         /
+                          )_______(
+                          |'''''''|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )'''''''(
+                         |_________|
+                       .-------------.
+                      |_______________|
+```
+
+## Usage
+
+auction.py
+
+The auction.py file contains the main program logic for the secret auction. It includes the following functions:
+
+    auction(): This function prompts the user for their name and bid amount, and stores them as key-value pairs in the auctionMembers dictionary.
+    The program starts by printing the program logo. It then calls the auction() function to collect the bids from the participants. After all bids are entered, the program determines the winner with the highest bid and displays the result.
+
+The program prompts the user to indicate whether there are any other bidders. Entering "n" ends the auction and proceeds to calculate the winner.
+
+## Getting Started
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+
+## Running the Program
+
+To run the program, execute the following command:
+
+```bash
+python auction.py
+```
+
+Follow the prompts in the console to enter the bidder's name and bid amount. If there are more bidders, enter "y" when prompted. Once all bids are entered, the program will display the winner with the highest bid. If no bid is entered or all bids are zero or negative, no winner will be declared.
+
+## Example
+
+Here is an example interaction with the program:
+
+```bash
+What is your name?: John
+What is your bid?: ₹5000
+Are there any other bidders? Type 'y' for 'yes' or 'n' for 'no': y
+What is your name?: Jane
+What is your bid?: ₹7000
+Are there any other bidders? Type 'y' for 'yes' or 'n' for 'no': n
+The winner is Jane with a bid of ₹7000
+```
 
