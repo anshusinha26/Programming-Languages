@@ -302,22 +302,22 @@ Enjoy playing Hangman!
 This project includes two files: main.py and cc.py. The main.py file implements a simple Caesar Cipher encryption and decryption program, while the cc.py file contains the logo for the program.
 
 ```bash
- ,adPPYba, ,adPPYYba,  ,adPPYba, ,adPPYba, ,adPPYYba, 8b,dPPYba,  
-a8"     "" ""     `Y8 a8P_____88 I8[    "" ""     `Y8 88P'   "Y8  
-8b         ,adPPPPP88 8PP"        `"Y8ba,  ,adPPPPP88 88          
-"8a,   ,aa 88,    ,88 "8b,   ,aa aa    ]8I 88,    ,88 88          
+ ,adPPYba, ,adPPYYba,  ,adPPYba, ,adPPYba, ,adPPYYba, 8b,dPPYba,
+a8"     "" ""     `Y8 a8P_____88 I8[    "" ""     `Y8 88P'   "Y8
+8b         ,adPPPPP88 8PP"        `"Y8ba,  ,adPPPPP88 88
+"8a,   ,aa 88,    ,88 "8b,   ,aa aa    ]8I 88,    ,88 88
  `"Ybbd8"' `"8bbdP"Y8  `"Ybbd8"' `"YbbdP"' `"8bbdP"Y8 88
 
-           88                                 
-           ""             88                                 
-                          88                                 
- ,adPPYba, 88 8b,dPPYba,  88,dPPYba,   ,adPPYba, 8b,dPPYba,  
-a8"     "" 88 88P'    "8a 88P'    "8a a8P_____88 88P'   "Y8  
-8b         88 88       d8 88       88 8PP        88          
-"8a,   ,aa 88 88b,   ,a8" 88       88 "8b,   ,aa 88          
- `"Ybbd8"' 88 88`YbbdP"'  88       88  `"Ybbd8"' 88          
-              88                                             
-              88  
+           88
+           ""             88
+                          88
+ ,adPPYba, 88 8b,dPPYba,  88,dPPYba,   ,adPPYba, 8b,dPPYba,
+a8"     "" 88 88P'    "8a 88P'    "8a a8P_____88 88P'   "Y8
+8b         88 88       d8 88       88 8PP        88
+"8a,   ,aa 88 88b,   ,a8" 88       88 "8b,   ,aa 88
+ `"Ybbd8"' 88 88`YbbdP"'  88       88  `"Ybbd8"' 88
+              88
+              88
 ```
 
 ## Usage
@@ -341,6 +341,7 @@ To run the program, execute the following command:
 ```bash
 python main.py
 ```
+
 Follow the prompts in the console to choose the command (encode or decode), enter the message, and specify the shift value. The program will display the encoded or decoded result and ask if you want to go again.
 
 ## Example
@@ -449,7 +450,7 @@ The main.py file contains the main program logic for the calculator. It includes
 - mul(num1, num2): This function takes two numbers as input and returns their product.
 - div(num1, num2): This function takes two numbers as input and returns their division.
 
-The calc() function is the main entry point of the program. It prompts the user for the first number and the operator symbol (+, -, *, /). It then asks for the next number and performs the corresponding operation. The result is displayed, and the user can choose to continue with the result or start a new calculation.
+The calc() function is the main entry point of the program. It prompts the user for the first number and the operator symbol (+, -, \*, /). It then asks for the next number and performs the corresponding operation. The result is displayed, and the user can choose to continue with the result or start a new calculation.
 
 ## Getting Started
 
@@ -494,13 +495,13 @@ Type 'y' to continue calculating with 16, or type 'n' to start a new calculation
 This is a simple number guessing game implemented in Python. The program generates a random number between 1 and 100, and the player's objective is to guess the correct number within a limited number of attempts.
 
 ```bash
- #####                                                        #     #                                    
-#     # #    # ######  ####   ####     ##### #    # ######    ##    # #    # #    # #####  ###### #####  
-#       #    # #      #      #           #   #    # #         # #   # #    # ##  ## #    # #      #    # 
-#  #### #    # #####   ####   ####       #   ###### #####     #  #  # #    # # ## # #####  #####  #    # 
-#     # #    # #           #      #      #   #    # #         #   # # #    # #    # #    # #      #####  
-#     # #    # #      #    # #    #      #   #    # #         #    ## #    # #    # #    # #      #   #  
- #####   ####  ######  ####   ####       #   #    # ######    #     #  ####  #    # #####  ###### #    # 
+ #####                                                        #     #
+#     # #    # ######  ####   ####     ##### #    # ######    ##    # #    # #    # #####  ###### #####
+#       #    # #      #      #           #   #    # #         # #   # #    # ##  ## #    # #      #    #
+#  #### #    # #####   ####   ####       #   ###### #####     #  #  # #    # # ## # #####  #####  #    #
+#     # #    # #           #      #      #   #    # #         #   # # #    # #    # #    # #      #####
+#     # #    # #      #    # #    #      #   #    # #         #    ## #    # #    # #    # #      #   #
+ #####   ####  ######  ####   ####       #   #    # ######    #     #  ####  #    # #####  ###### #    #
 ```
 
 ## Usage
@@ -557,10 +558,11 @@ You got it! The answer was 42.
 ```
 
 # 🔺 Higher 🔻 Lower Game
+
 This is a simple Higher Lower game implemented in Python. The program presents two data items with descriptions and countries, and the player's objective is to guess which data item has more followers.
 
 ```bash
-██╗  ██╗██╗ ██████╗ ██╗  ██╗███████╗██████╗     ██╗      ██████╗ ██╗    ██╗███████╗██████╗ 
+██╗  ██╗██╗ ██████╗ ██╗  ██╗███████╗██████╗     ██╗      ██████╗ ██╗    ██╗███████╗██████╗
 ██║  ██║██║██╔════╝ ██║  ██║██╔════╝██╔══██╗    ██║     ██╔═══██╗██║    ██║██╔════╝██╔══██╗
 ███████║██║██║  ███╗███████║█████╗  ██████╔╝    ██║     ██║   ██║██║ █╗ ██║█████╗  ██████╔╝
 ██╔══██║██║██║   ██║██╔══██║██╔══╝  ██╔══██╗    ██║     ██║   ██║██║███╗██║██╔══╝  ██╔══██╗
@@ -685,7 +687,7 @@ Here is an example interaction with the coffee machine:
    |            (__  ;
    |             | )  )
    |             |/  /
-   |             /  / 
+   |             /  /
    |            (  /
    \             y'
     `-.._____..-'
@@ -757,7 +759,7 @@ class Question:
         self.quizAnswer = answer
 ```
 
-The Question class has an __init__ method that initializes each question object with a quizQuestion and a quizAnswer.
+The Question class has an **init** method that initializes each question object with a quizQuestion and a quizAnswer.
 
 ## quiz_brain.py
 
@@ -775,7 +777,7 @@ class QuizBrain:
         input(f"Q.{self.questionNumber}: {currentQuestion.text} (True/False): ")
 ```
 
-The QuizBrain class has an __init__ method that takes a question list (qList) as a parameter. It also has a nextQuestion method that retrieves the current question from the question list and prompts the user for an answer.
+The QuizBrain class has an **init** method that takes a question list (qList) as a parameter. It also has a nextQuestion method that retrieves the current question from the question list and prompts the user for an answer.
 
 ## Getting Started
 
@@ -929,6 +931,7 @@ The code includes the following features:
 - A loop to initiate the positions of the turtle objects.
 - Handling the race logic and determining the winner.
 - Displaying the race result on the screen.
+
 ## Getting Started
 
 To run the Turtle Racing Game, follow these steps:
@@ -942,3 +945,279 @@ To run the Turtle Racing Game, follow these steps:
 7. Click on the screen to start the race.
 8. Wait for the race to finish and see the result displayed on the screen.
 9. You can modify the code to add more turtles, change their colors, adjust the race track, or implement additional features to enhance the game.
+
+# 🐍 Snake Game
+
+This readme provides an overview of the Snake Game project, including the main functionality and code snippets.
+
+![Snake game](Images/snake_game.gif)
+
+## Project Description
+
+The Snake Game is a classic arcade game where the player controls a snake to eat food and grow longer. The goal is to avoid colliding with walls or the snake's own body. The game keeps track of the player's score and the highscore.
+
+## Project Details
+
+## main.py
+
+The main.py file contains the main code for the Snake Game. It sets up the game window, creates the snake, food, and scoreboard objects, and handles the game logic.
+
+```bash
+# Imported Turtle and Screen class from the turtle module
+from turtle import Turtle, Screen
+
+# Imported Snake class from the snake module
+from snake import Snake
+
+# Imported Food class from the food module
+from food import Food
+
+# Imported Scoreboard class from the scoreboard module
+from scoreboard import Scoreboard
+
+# Imported time module
+import time
+
+# Created an object using the Screen class
+screen = Screen()
+screen.tracer(0)    # Turning off the tracer
+screen.setup(width=600, height=600)
+screen.bgcolor("green")
+screen.title("Snake Game")
+
+# Creating the snake object
+snake = Snake()
+
+# Creating the food object
+food = Food()
+
+# Creating the score object
+score = Scoreboard()
+
+# Making the screen listen to keystrokes
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
+
+isGameOn = True
+
+while isGameOn:
+    # Updating the screen
+    screen.update()
+    # Adding delay in animation
+    time.sleep(0.15)
+    # Moving the snake
+    snake.moveSnake()
+
+    # Checking if the snake eats the food
+    if snake.head.distance(food) < 15:
+        score.increaseScore()
+        food.moveFood()
+        snake.extendBody()
+
+    # Checking if the snake hits the wall
+    if snake.head.xcor() > 280 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -280:
+        score.reset()
+        snake.reset()
+
+    # Checking if the snake collides with its own body
+    for body in snake.bodies[1:]:
+        if snake.head.distance(body) < 10:
+            score.reset()
+            snake.reset()
+
+# Screen exits on click
+screen.exitonclick()
+```
+
+The code includes the following features:
+
+- Importing the Turtle and Screen classes from the turtle module.
+- Importing the Snake, Food, and Scoreboard classes from their respective modules.
+- Creating a screen object to set up the game window.
+- Creating a snake object to represent the player-controlled snake.
+- Creating a food object to represent the food for the snake.
+- Creating a score object to keep track of the player's score.
+- Configuring the screen to listen for keystrokes and map them to snake movement.
+- Implementing the game loop to update the screen, move the snake, check for collisions, and update the score.
+- Handling game over conditions when the snake hits the wall or collides with its own body.
+- Exiting the screen on click.
+
+## snake.py
+
+The snake.py file contains the Snake class, which represents the snake object and its behavior.
+
+```bash
+# Imported Turtle class from the turtle module
+from turtle import Turtle
+
+# Starting positions
+STARTINGPOSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+
+# Snake directions
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
+# Forward distance
+DISTANCE = 10
+
+# Created the Snake class
+class Snake:
+    def __init__(self):
+        self.bodies = []
+        self.createSnake()
+        self.head = self.bodies[0]
+
+    def createSnake(self):
+        for position in STARTINGPOSITIONS:
+           self.addBodies(position)
+
+    def addBodies(self, position):
+        newBody = Turtle()
+        newBody.shape("square")
+        newBody.color("black")
+        newBody.penup()
+        newBody.goto(position)
+        self.bodies.append(newBody)
+
+    def extendBody(self):
+        self.addBodies(self.bodies[-1].position())
+
+    def moveSnake(self):
+        for body in range(len(self.bodies) - 1, 0, -1):
+            newX = self.bodies[body - 1].xcor()
+            newY = self.bodies[body - 1].ycor()
+            self.bodies[body].goto(newX, newY)
+        self.head.forward(DISTANCE)
+
+    def up(self):
+        if self.head.heading() != DOWN:
+            self.head.setheading(UP)
+
+    def down(self):
+        if self.head.heading() != UP:
+            self.head.setheading(DOWN)
+
+    def left(self):
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)
+
+    def right(self):
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)
+
+    def reset(self):
+        for body in self.bodies:
+            body.goto(1000, 1000)
+        self.bodies.clear()
+        self.createSnake()
+        self.head = self.bodies[0]
+```
+
+The code includes the following features:
+
+- Importing the Turtle class from the turtle module.
+- Defining the starting positions for the snake.
+- Defining constants for different directions and the forward distance for snake movement.
+- Creating the Snake class with methods to initialize the snake, add body segments, extend the snake's body, move the snake, and handle - keyboard input for changing direction.
+- Resetting the snake's position and body segments.
+
+## scoreboard.py
+
+The scoreboard.py file contains the Scoreboard class, which manages the score and highscore display.
+
+```bash
+# Imported Turtle class from the turtle module
+from turtle import Turtle
+
+# Constants
+ALIGNMENT = "center"
+FONT = ("Courier", 20, "bold")
+
+# Scoreboard class is created
+class Scoreboard(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.hideturtle()
+        self.penup()
+        self.goto(0, 275)
+        self.score = 0
+        with open("data.txt") as file:
+            self.highscore = int(file.read())
+        self.updateScoreBoard()
+
+    def updateScoreBoard(self):
+        self.clear()
+        self.write(f"Score: {self.score}  Highscore: {self.highscore}", align=ALIGNMENT, font=FONT)
+
+    def reset(self):
+        if self.score > self.highscore:
+            self.highscore = self.score
+            with open("data.txt", mode="w") as file:
+                file.write(str(self.highscore))
+        self.score = 0
+        self.updateScoreBoard()
+
+    def increaseScore(self):
+        self.score += 1
+        self.updateScoreBoard()
+```
+
+The code includes the following features:
+
+- Importing the Turtle class from the turtle module.
+- Defining constants for the alignment and font of the scoreboard text.
+- Creating the Scoreboard class, which inherits from Turtle.
+- Initializing the scoreboard with a hidden turtle, setting the initial score and highscore, and updating the scoreboard display.
+- Updating the scoreboard text with the current score and highscore.
+- Resetting the score and updating the highscore if the current score is higher.
+- Increasing the score and updating the scoreboard.
+
+## food.py
+
+The food.py file contains the Food class, which represents the food object for the snake.
+
+```bash
+# Turtle class is imported from the turtle module
+from turtle import Turtle
+
+# Random module is imported
+import random
+
+# Food class is created which inherits Turtle class
+class Food(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.shape("circle")
+        self.color("pink")
+        self.penup()
+        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+        self.speed("fastest")
+        self.moveFood()
+
+    def moveFood(self):
+        randomX = random.randint(-280, 280)
+        randomY = random.randint(-280, 280)
+        self.goto(randomX, randomY)
+```
+
+The code includes the following features:
+
+- Importing the Turtle class from the turtle module.
+- Importing the random module for generating random positions for the food.
+- Creating the Food class, which inherits from Turtle.
+- Initializing the food with a circular shape, pink color, and adjusted size.
+- Moving the food to a random position within the game window.
+
+## data.txt
+The data.txt file contains the highscore data for the game. It is a simple text file that stores a single integer representing the highscore.
+
+## Usage
+
+To run the Snake Game, execute the main.py file. The game window will open, and you can control the snake using the arrow keys. The objective is to eat the food and avoid collisions with walls and the snake's body. The score and highscore will be displayed on the top of the screen. The game will end if the snake hits the wall or collides with its own body. You can click on the screen to exit the game.
+
+Note: Make sure that the necessary modules (turtle, random) are installed in your Python environment.
