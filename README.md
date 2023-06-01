@@ -1999,8 +1999,7 @@ This project relies on the following dependencies:
 
 Make sure you have these dependencies installed before running the script.
 
-# Billboard Top 100 Songs Scraper and Spotify Playlist Creator
-
+# 🎵 The Musical time machine
 This project aims to scrape the Billboard Top 100 songs for a specific date and create a private playlist for those songs on Spotify.
 
 ![The musical time machine](Images/the_musical_time_machine.gif)
