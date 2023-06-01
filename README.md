@@ -786,3 +786,83 @@ To run the quiz project, follow these steps:
 3. Open a terminal or command prompt and navigate to the project directory.
 4. Run the main.py file using the command python main.py.
 5. The program will display each question from the question bank and prompt the user for an answer. You can modify the project code to add additional features or customize the quiz experience.
+
+# 🖼️ The Hirst Painting Project
+
+This readme provides an overview of the Hirst painting project, including the main function and its functionality.
+
+![The hirst painting](Images/the_hirst_painting.gif)
+
+## Project Description
+
+The Hirst painting project aims to create a painting using a turtle graphic with randomly colored dots. The project utilizes the colorgram module, a third-party library in Python, to extract colors from an image and apply them to the dots.
+
+## Project Details
+
+main.py
+
+The main.py file contains the main function timCreateHirstPainting that generates the Hirst painting.
+
+```bash
+def timCreateHirstPainting(x, y):
+    import colorgram
+
+    colors = colorgram.extract("image1.jpg", 50)
+
+    colorList = []
+
+    for color in colors:
+        red = color.rgb.r
+        green = color.rgb.g
+        blue = color.rgb.b
+        rgbColor = (red, green, blue)
+        colorList.append(rgbColor)
+
+    # Tim's configurations
+    turtle.colormode(255)
+    tim.penup()
+    tim.goto(-200, -200)
+
+    dotsNumber = 100
+
+    for dot in range(1, dotsNumber + 1):
+        tim.dot(20, random.choice(colorList))
+        tim.forward(40)
+
+        if dot % 10 == 0:
+            tim.setheading(90)
+            tim.forward(40)
+            tim.setheading(180)
+            tim.forward(400)
+            tim.setheading(0)
+
+    tim.hideturtle()
+    screen.exitonclick()
+
+screen.onscreenclick(timCreateHirstPainting, 1)
+turtle.mainloop()
+```
+
+The timCreateHirstPainting function performs the following steps:
+
+1. Imports the colorgram module to extract colors from the image.
+2. Extracts and stores 50 colors from the provided image.
+3. Configures Tim's turtle graphic.
+4. Iterates through a loop to create and color the dots.
+5. Moves the turtle according to a pattern.
+6. Hides the turtle and waits for a click event to exit the screen.
+7. The onscreenclick function binds the timCreateHirstPainting function to a mouse click event on the screen.
+
+## Getting Started
+
+To run the Hirst painting project, follow these steps:
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Install the required dependencies, such as the colorgram module.
+4. Place the desired image file (e.g., image1.jpg) in the project directory.
+5. Open a terminal or command prompt and navigate to the project directory.
+6. Run the main.py file using the command python main.py.
+7. Click on the screen to generate the Hirst painting.
+
+You can modify the code to use different images or adjust the parameters to customize the painting.
