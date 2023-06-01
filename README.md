@@ -2056,3 +2056,57 @@ This project relies on the following dependencies:
 - `spotipy`: Used for authenticating with the Spotify Web API and performing Spotify-related operations.
 
 Make sure you have these dependencies installed before running the script.
+
+# 🤖 Automated Amazon price tracker
+
+This project allows you to track the price of a product on Amazon and receive an email alert when the price drops below a preferred value.
+
+![Automated price tracker](Images/automated_price_tracker.gif)
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the required dependencies:
+   - `requests`: Install it using pip:
+     ```
+     pip install requests
+     ```
+   - `beautifulsoup4`: Install it using pip:
+     ```
+     pip install beautifulsoup4
+     ```
+   - `lxml`: Install it using pip:
+     ```
+     pip install lxml
+     ```
+   - `smtplib`: This module is already included in the Python standard library.
+
+2. Set up the email details:
+   - Update the `MY_EMAIL` variable with your email address.
+   - Update the `PASSWORD` variable with the password for your email account.
+   - Update the `receiver` variable with the recipient's email address.
+
+3. Set up the Amazon product details:
+   - Update the `amEndpoint` variable with the URL of the Amazon product page you want to track.
+   - Update the `preferredPrice` variable with the price at which you would like to be notified.
+
+4. Run the script. It will scrape the Amazon product page, extract the product name and price, and check if the price is below the preferred value.
+
+5. If the price is below the preferred value, it will send an email alert to the specified recipient with the product details and an attached image.
+
+## Modules Used
+
+- `requests`: Used to make HTTP requests to fetch the Amazon product page HTML content.
+- `BeautifulSoup` from `bs4`: Used for parsing the HTML content and extracting the product details.
+- `lxml`: Used as the parser for BeautifulSoup.
+- `smtplib`: Used for sending emails.
+
+## Dependencies
+
+This project relies on the following dependencies:
+- `requests`: Used for making HTTP requests to fetch the Amazon product page HTML content.
+- `beautifulsoup4`: Used for parsing the HTML content and extracting the product details.
+- `lxml`: Used as the parser for BeautifulSoup.
+
+Make sure you have these dependencies installed before running the script.
