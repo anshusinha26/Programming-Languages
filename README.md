@@ -632,3 +632,80 @@ Who has more followers? Type 'A' or 'B': B
 Sorry, that's wrong. Final score: 1
 ```
 
+# ☕️ Coffee Machine Project
+
+This is a simple coffee machine project implemented in Python. The program simulates a coffee machine that can serve different types of coffee, track resources, and process transactions.
+
+## Usage
+
+main.py
+
+The main.py file contains the main program logic for the coffee machine. It includes the following features:
+
+- The logo variable contains an ASCII art logo that is displayed at the start of the program.
+- The resources variable contains a dictionary of available resources for making coffee, such as water, milk, coffee, etc.
+- The profit variable keeps track of the total profit made from coffee sales.
+- The MENU variable is a dictionary that stores the available coffee options with their respective ingredients and cost.
+- The program prompts the user for their desired coffee or other commands.
+- The report() function generates a report of the remaining resources and the profit made.
+- The resourcesSufficient() function checks if there are sufficient resources to make the requested coffee.
+- The processCoins() function processes the coins inserted by the user and returns the total value in dollars.
+- The transaction() function handles the transaction by checking if the user's money is enough to make the requested coffee.
+- The makeCoffee() function deducts the required ingredients from the resources to make the coffee.
+- The program continues to run until the user chooses to exit.
+
+## Getting Started
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Open a terminal or command prompt and navigate to the project directory.
+
+## Running the Coffee Machine
+
+To run the coffee machine, execute the following command:
+
+```bash
+python main.py
+```
+
+Follow the prompts in the console to select your desired coffee or perform other commands. The program will display the available resources, process the transaction, and provide the coffee and change if applicable. You can also check the report to see the remaining resources and the profit made.
+
+## Example
+
+Here is an example interaction with the coffee machine:
+
+```bash
+         {
+      {   }
+       }_{ __{
+    .-{   }   }-.
+   (   }     {   )
+   |`-.._____..-'|
+   |             ;--,
+   |            (__  ;
+   |             | )  )
+   |             |/  /
+   |             /  / 
+   |            (  /
+   \             y'
+    `-.._____..-'
+
+Welcome to the Coffee Machine!
+
+What would you like? (espresso / latte / cappuccino): latte
+Please insert coins.
+How many quarters?: 2
+How many dimes?: 1
+How many nickels?: 1
+How many pennies?: 3
+Here is $0.85 dollars in change.
+Here is your latte. Enjoy!
+
+What would you like? (espresso / latte / cappuccino): report
+Water: 300ml
+Milk: 200ml
+Coffee: 100g
+Money: $2.5
+
+What would you like? (espresso / latte / cappuccino): exit
+```
