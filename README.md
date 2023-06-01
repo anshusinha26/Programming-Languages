@@ -866,3 +866,79 @@ To run the Hirst painting project, follow these steps:
 7. Click on the screen to generate the Hirst painting.
 
 You can modify the code to use different images or adjust the parameters to customize the painting.
+
+# 🐢 Turtle Racing Game
+
+This readme provides an overview of the Turtle Racing Game project, including the main functionality and code snippets.
+
+![Turtle racing game](Images/turtle_racing_game.gif)
+
+## Project Description
+
+The Turtle Racing Game is a simple game where turtles race against each other to reach the finish line. Users can place bets on the winning turtle, and the game determines the winner based on the actual race results.
+
+## Project Details
+
+main.py
+
+The main.py file contains the main code for the Turtle Racing Game. It includes various functions and configurations to set up the game, create tracks and turtles, and handle the race logic.
+
+```bash
+# Turtle and Screen class is imported from the turtle module
+import turtle
+from turtle import Turtle, Screen
+
+# Random module is imported
+import random
+
+# Tim object is created
+tim = Turtle()
+tim.shape("turtle")
+tim.hideturtle()
+
+# Screen object is created
+screen = Screen()
+
+# A method which makes the turtle screen listen to the keyboard and mouse events
+screen.listen()
+
+# ...
+
+# The code snippets for different functionality are commented out. Uncomment them to enable the corresponding feature.
+
+# ...
+
+# The screen exits on click
+screen.exitonclick()
+
+# ...
+
+# More code snippets for other functionality are commented out. Uncomment them as needed.
+```
+
+The code includes the following features:
+
+- Importing the Turtle and Screen classes from the turtle module.
+- Importing the random module.
+- Creating a tim turtle object and configuring its appearance.
+- Creating a screen object.
+- Configuring the screen to listen to events.
+- Various functions to implement different game features, such as moving the turtle forward, creating a sketch, creating a finish line, - creating starting lines, creating tracks, and more.
+- A list of colors and turtle names.
+- A list to store all created turtles.
+- A loop to initiate the positions of the turtle objects.
+- Handling the race logic and determining the winner.
+- Displaying the race result on the screen.
+## Getting Started
+
+To run the Turtle Racing Game, follow these steps:
+
+1. Clone the repository or download the project files.
+2. Make sure you have Python 3.x installed on your system.
+3. Install the required dependencies, such as the turtle module.
+4. Open a terminal or command prompt and navigate to the project directory.
+5. Run the main.py file using the command python main.py.
+6. Follow the on-screen instructions to place a bet on the winning turtle.
+7. Click on the screen to start the race.
+8. Wait for the race to finish and see the result displayed on the screen.
+9. You can modify the code to add more turtles, change their colors, adjust the race track, or implement additional features to enhance the game.
