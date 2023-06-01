@@ -1367,7 +1367,7 @@ The converted distance will be displayed in the label next to the "Km" text.
 
 You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the input field, button, and labels. You can adjust the font, padding, and other properties of the elements to fit your preferences.
 
-# Pomodoro
+# ⏱️ Pomodoro
 
 The Pomodoro Timer is a productivity tool that helps you stay focused and manage your time effectively using the Pomodoro Technique. The program is built using the Tkinter module in Python.
 
