@@ -1669,3 +1669,44 @@ To use the ISS overhead notifier:
 - The script uses the smtplib module to send email notifications. By default, it uses the Gmail SMTP server. If you're using a different email provider, you may need to update the SMTP server settings in the smtplib.SMTP call.
 - Ensure that your email account has the necessary permissions to send emails and that you comply with the email provider's policies and limitations.
 - The script sleeps for 60 seconds between each check. You can modify this interval based on your requirements.
+
+# 🙋🏻‍♂️ Quizzler
+
+This is a simple quiz application called Quizzler. It presents a set of true/false questions and allows users to answer them. The application keeps track of the user's score and provides feedback on each question.
+
+![GUI quiz app](Images/quizzler.gif)
+
+## How to Use
+
+1. Run the main.py script to start the quiz.
+2. The quiz will display a true/false question on the window.
+3. Click the "True" button if you think the statement is true, or click the "False" button if you think it is false.
+4. After you choose an answer, the application will provide feedback by changing the background color of the window.
+5. A green background indicates that your answer was correct.
+6. A red background indicates that your answer was incorrect.
+7. The score will be displayed at the top of the window.
+8. The next question will automatically appear after a one-second delay.
+9. Answer all the questions until you reach the end of the quiz.
+10. Once you've completed the quiz, the application will display your final score.
+
+## Code Organization
+
+The project is divided into multiple files:
+
+- main.py: This file contains the main entry point of the application. It creates instances of the question bank, quiz brain, and the user interface.
+- question_model.py: This file defines the Question class, which represents a true/false question. Each Question object stores the question text and the correct answer.
+- data.py: This file retrieves a set of true/false questions from the Open Trivia Database API using the requests module. It stores the question data in the question_data variable.
+- quiz_brain.py: This file contains the QuizBrain class, which manages the quiz logic. It keeps track of the question number, the user's score, and the current question. The QuizBrain class also provides methods to check if there are more questions and to move to the next question.
+- ui.py: This file contains the QuizInterface class, which handles the graphical user interface using the Tkinter library. It creates the window, labels, canvas, and buttons for the quiz application. The QuizInterface class communicates with the QuizBrain class to display questions, handle user input, and provide feedback.
+
+## Dependencies
+
+The Quizzler application relies on the following libraries:
+
+Tkinter: It is the standard GUI library for Python. It is included in most Python installations, so no additional installation is required.
+
+## Note
+
+- The application uses the Open Trivia Database API to fetch the quiz questions. Ensure that you have an internet connection to retrieve the data.
+- The images for the "True" and "False" buttons are assumed to be located in an images folder within the project directory. Make sure to place the images accordingly.
+- The main.py script creates an instance of the QuizInterface class, which opens the quiz window and starts the quiz. Uncomment the while loop in main.py and comment out the lines below it if you want to run the quiz in the console instead of using the graphical user interface.
