@@ -1948,4 +1948,45 @@ This project is developed using Python and the `requests` module. For more detai
 - [Nutritionix API Documentation](https://www.nutritionix.com/business/api)
 - [Sheety API Documentation](https://sheety.co/docs/)
 
-Feel free to modify or enhance the README file according to your project's specific details and requirements.
+# 🍿 100 Movies That You Must Watch
+
+This project aims to provide a list of 100 movies that you must watch. The list is sourced from the Internet Archive's data, specifically from the Empire Online website's "100 Movies That You Must See" feature.
+
+![100 movies to watch](Images/100_movies.gif)
+
+
+## Getting Started
+
+To run this project, follow the steps below:
+
+1. Install the required dependencies:
+   - `requests`: Install it using pip:
+     ```
+     pip install requests
+     ```
+   - `beautifulsoup4`: Install it using pip:
+     ```
+     pip install beautifulsoup4
+     ```
+
+2. Run the script. It will scrape the Internet Archive data from the Empire Online webpage and extract the list of movies.
+
+3. The extracted movies will be stored in a text file named `movies.txt`.
+
+## Working with Internet Archive Data
+
+The `iaEndpoint` variable holds the URL of the Internet Archive snapshot of the Empire Online webpage. The script makes a request to this endpoint to fetch the webpage's HTML content.
+
+The HTML content is then parsed using the `beautifulsoup4` library, creating a `soup` object. The script finds all the movie titles on the webpage using the appropriate HTML tags and class names.
+
+The movie titles are stored in the `iaMoviesList` list. Finally, the script writes the movie titles to the `movies.txt` file.
+
+## Dependencies
+
+This project relies on the following dependencies:
+- `requests`: Used for making HTTP requests to fetch the webpage content.
+- `beautifulsoup4`: Used for parsing the HTML content and extracting the movie titles.
+
+Make sure you have these dependencies installed before running the script.
+
+This project is developed using Python and the `requests` and `beautifulsoup4` libraries. Feel free to modify or enhance the README file according to your project's specific details and requirements.
