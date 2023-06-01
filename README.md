@@ -1319,3 +1319,25 @@ If you want to exit the game, you can enter "Exit" in the prompt. The game will 
 You can modify the game by changing the map image file or the state data file. Make sure the map image file is in GIF format and the state data file follows the required format (e.g., "indianStates.csv").
 
 You can also customize the appearance of the game by modifying the constants such as ALIGNMENT and FONT in the code.
+
+# NATO Alphabet Project 🇦🇱🇧🇪🇧🇬🇨🇦🇭🇷🇨🇿🇩🇰🇪🇪🇫🇮🇫🇷🇩🇪🇬🇷🇭🇺🇮🇸🇮🇹🇱🇻🇱🇹🇱🇺🇲🇪🇳🇱🇲🇰🇳🇴🇵🇱🇵🇹🇷🇴🇸🇰🇸🇮🇪🇸🇹🇷🇬🇧🇺🇸
+
+The NATO Alphabet Project is a program that converts user input into the corresponding NATO phonetic alphabet code. The NATO phonetic alphabet is used to spell out letters and words in a way that is clear and unambiguous, particularly in communication over radio or phone.
+
+## Getting Started
+
+To run the program, make sure you have Python installed on your system. Clone the repository or download the source code files. The program requires the following dependency:
+
+- pandas
+
+You also need the NATO phonetic alphabet data file ("nato_phonetic_alphabet.csv") to run the program.
+
+## Running the Program
+
+To use the program, run the main.py file. The program will prompt you to enter a word. Input the word and press Enter. The program will convert each letter of the word into its corresponding NATO phonetic alphabet code. The codes will be displayed as a list.
+
+Note: The program only accepts letters of the alphabet. If you enter any other characters, an error message will be displayed, and you will be prompted to enter a valid word.
+
+## Customization
+
+You can modify the program by changing the NATO phonetic alphabet data file. Make sure the file is in CSV format and follows the required format (e.g., "nato_phonetic_alphabet.csv").
