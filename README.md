@@ -1274,3 +1274,21 @@ scoreboard.py: This file contains the Scoreboard class, which manages the level 
 ## Customization
 
 You can customize various aspects of the game, such as the window size, car speed, and scoring system, by modifying the variables in the code.
+
+# 📩 Mail Merge Project
+
+This project involves creating personalized letters using a starting letter template and a list of names. The starting letter template contains a placeholder [name] that needs to be replaced with each name from the list. The final letters are saved in a folder named "ReadyToSend".
+
+## Getting Started
+
+To run the project, make sure you have Python installed on your system. Clone the repository or download the source code files. The project requires the starting_letter.txt file in the Input/Letters folder and the invited_names.txt file in the Input/Names folder.
+
+## Running the Project
+
+To execute the mail merge, run the main.py file. The program will read the contents of the starting_letter.txt file and store it in a variable called letter. It will then read the list of names from the invited_names.txt file and iterate over each name.
+
+For each name, the program will replace the [name] placeholder in the letter with the actual name. It will create a new letter with the modified name and save it as a text file in the Output/ReadyToSend folder. The new file will be named letterTo<name>.txt, where <name> is the modified name.
+
+## Customization
+
+You can customize the project by modifying the content of the starting_letter.txt file and the list of names in the invited_names.txt file. Make sure to follow the format and placeholders correctly to ensure the replacement is done accurately.
