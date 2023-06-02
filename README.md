@@ -2813,3 +2813,83 @@ You can modify the `Book` class in the `app.py` file to add additional fields or
 ## Security Note
 
 This application provides a basic demonstration of CRUD (Create, Read, Update, Delete) operations with a database. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication, authorization, and input validation to prevent security vulnerabilities.
+
+# 🎬 Top 10 movies website
+
+This is a Flask web application that allows users to rate and review movies. Users can add movies to the collection, rate them out of 10, and provide their reviews. The application retrieves movie information from The Movie Database (TMDb) API.
+
+![Top 10 movies website](Images/100_movies.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+- Flask-Bootstrap extension
+- Flask-WTF extension
+- Flask-SQLAlchemy extension
+- WTForms library
+- Requests library
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install the required dependencies using pip:
+
+```bash
+pip install flask flask-bootstrap flask-wtf flask-sqlalchemy wtforms requests
+```
+
+3. Obtain an API key from [The Movie Database (TMDb)](https://www.themoviedb.org/) and replace `API_KEY` in `app.py` with your API key.
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001) to access the application.
+4. The homepage displays the movies in the collection, sorted by rating.
+5. To rate and review a movie, click on the "Rate" link next to the movie. Enter your rating out of 10 and provide your review. Click "Done" to submit your rating and review.
+6. To delete a movie from the collection, click on the "Delete" link next to the movie.
+7. To add a new movie, click on the "Add Movie" button. Enter the title of the movie and click "Add movie".
+8. The application will search for the movie using the TMDb API and display a list of search results. Click on the movie you want to add to the collection.
+9. The application will retrieve the movie information from the TMDb API and add it to the collection. You will be redirected to the rating and review page for the new movie.
+
+## Database
+
+The movie collection is stored in an SQLite database file named `movies.db`. The database file will be created automatically when you run the application for the first time.
+
+## Forms
+
+The application uses Flask-WTF forms (`Rate_Movie_Form` and `Add_Movie_Form`) to handle user input for rating, review, and adding a movie. The forms are defined in the `app.py` file. You can modify these forms to customize the input fields or add additional validation.
+
+## API
+
+The application uses The Movie Database (TMDb) API to search for movies and retrieve movie information. You need to obtain an API key from the TMDb website and replace `API_KEY` in the `app.py` file with your API key.
+
+## Templates
+
+The application uses HTML templates (`index.html`, `add.html`, `edit.html`, `select.html`) to render the content. The templates are located in the `templates` directory. You can modify these templates to customize the appearance and functionality of the application.
+
+## Models
+
+The `Movie` class represents a movie in the collection. It has the following attributes:
+
+- `id`: Unique identifier for the movie (primary key).
+- `title`: Title of the movie.
+- `year`: Year of the movie.
+- `description`: Description of the movie.
+- `rating`: Rating given by the user.
+- `ranking`: Ranking of the movie based on the rating.
+- `review`: Review provided by the user.
+- `img_url`: URL of the movie poster image.
+
+You can modify the `Movie` class in the `app.py` file to add additional fields or change the database schema.
+
+## Security Note
+
+This application provides a basic demonstration of movie rating and review functionality. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication, authorization, and input validation to prevent security vulnerabilities.
+
