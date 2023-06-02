@@ -2475,3 +2475,69 @@ if __name__ == "__main__":
 - In the home function, we fetch the blog data from the API and render it using the index.html template.
 - In the blog function, we find the requested blog post based on the index parameter and render it using the post.html template.
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
+
+# 🐶 Tindog
+
+This is a Flask web application that serves two HTML templates, `index.html` and `solution.html`.
+
+![Tindog](Images/tindog.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install Flask using pip:
+
+```bash
+pip install flask
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001) to see the homepage.
+4. Click on the "Solution" link to navigate to the solution page.
+
+## Template Structure
+
+The website uses two templates, `index.html` and `solution.html`, to render the content. You can modify these templates according to your requirements.
+
+## Code Explanation
+
+```python
+# imported Flask and render_template class from flask module
+from flask import Flask, render_template
+
+# created an instance of the Flask class and stored it in a variable called app
+app = Flask(__name__)
+
+# created a route decorator to tell Flask what URL should trigger the function
+@app.route('/')
+def index():
+ return render_template('index.html')
+
+@app.route('/solution')
+def solution():
+ return render_template('solution.html')
+
+# checks if name is the main program and runs the app
+if __name__ == '__main__':
+ app.run(debug=True, host='0.0.0.0', port=5001)
+ ```
+
+- We imported the Flask class and the render_template function from the flask module.
+- We created an instance of the Flask class and stored it in a variable called app.
+- We defined two routes using the @app.route decorator: '/' for the homepage and '/solution' for the solution page.
+- The index function is associated with the '/' route and renders the index.html template.
+- The solution function is associated with the '/solution' route and renders the solution.html template.
+- Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
