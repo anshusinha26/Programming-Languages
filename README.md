@@ -2341,3 +2341,64 @@ The code snippet consists of two routes: one for the home page ("/") and another
 - The home page displays a heading and an animated GIF.
 - When the user makes a guess, the Flask application compares the guess with a randomly generated number.
 - The application provides feedback on whether the guess is too low, too high, or correct, and displays an appropriate animated GIF.
+
+# 🪪 Name card
+
+This is a simple Flask website that serves an `index.html` template using the Flask `render_template` function.
+
+![Name card](Images/name_card.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install Flask using pip:
+
+```bash
+pip install flask
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001).
+4. You will see the contents of the `index.html` template rendered on the page.
+
+## Template Structure
+
+The website uses an `index.html` template to display the content. You can modify the template according to your requirements.
+
+## Code Explanation
+
+```python
+# imported Flask and render_template class from flask module
+from flask import Flask, render_template
+
+# created an instance of the Flask class and stored it in a variable called app
+app = Flask(__name__)
+
+# created a route decorator to tell Flask what URL should trigger our function
+@app.route('/')
+def about():
+ return render_template('index.html')
+
+# checks if the executed file is the main program and runs it
+if __name__ == '__main__':
+ app.run(debug=True, host='0.0.0.0', port=5001)
+```
+
+- We imported the Flask class and the render_template function from the flask module.
+- We created an instance of the Flask class and stored it in a variable called app.
+- We defined a route decorator using the @app.route decorator. In this case, the route is set to '/', representing the root URL.
+- The about function is associated with the route and uses render_template to render the index.html template.
+- Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
