@@ -2402,3 +2402,76 @@ if __name__ == '__main__':
 - We defined a route decorator using the @app.route decorator. In this case, the route is set to '/', representing the root URL.
 - The about function is associated with the route and uses render_template to render the index.html template.
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
+
+# 🧑🏻‍💻 Blog
+
+This is a Flask website that fetches blog posts from an API and renders them on different routes using templates.
+
+![Blog part 1](Images/blog.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+- Requests library
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install Flask and Requests using pip:
+
+```bash
+pip install flask requests
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001).
+4. You will see the blog posts rendered on the homepage.
+5. Click on the blog post titles to view individual blog posts.
+
+## Template Structure
+
+The website uses two templates, `index.html` and `post.html`, to render the blog posts. You can modify these templates according to your requirements.
+
+## Code Explanation
+
+```python
+from flask import Flask, render_template
+import requests
+
+app = Flask(__name__)
+
+blog_endpoint = 'https://api.npoint.io/c790b4d5cab58020d391'
+blog_response = requests.get(blog_endpoint)
+blog_data = blog_response.json()
+
+@app.route('/')
+def home():
+ return render_template("index.html", posts=blog_data)
+
+@app.route('/post/<int:index>')
+def blog(index):
+ for post in blog_data:
+     if post['id'] == index:
+         requested_post = post
+ return render_template("post.html", post=requested_post)
+
+if __name__ == "__main__":
+ app.run(debug=True, host='0.0.0.0', port=5001)
+ ```
+
+- We imported the Flask class and the render_template function from the flask module.
+- We imported the requests module to make HTTP requests to the blog API.
+- We created an instance of the Flask class and stored it in a variable called app.
+- We defined two routes using the @app.route decorator: '/' for the homepage and '/post/<int:index>' for individual blog posts.
+- In the home function, we fetch the blog data from the API and render it using the index.html template.
+- In the blog function, we find the requested blog post based on the index parameter and render it using the post.html template.
+- Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
