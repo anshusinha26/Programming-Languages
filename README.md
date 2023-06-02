@@ -2541,3 +2541,97 @@ if __name__ == '__main__':
 - The index function is associated with the '/' route and renders the index.html template.
 - The solution function is associated with the '/solution' route and renders the solution.html template.
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
+
+# 🧑🏻‍💻 Blog 2.0
+
+This is a Flask web application that serves a blog and a contact form. It retrieves blog data from an API, displays it on the website, and allows users to view individual blog posts. It also provides a contact form for users to send messages via email.
+
+![Blog 2.0](Images/blog_2.0.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+- Requests library
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install Flask and Requests using pip:
+
+```bash
+pip install flask requests
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Set the email credentials and receiver in the `app.py` file:
+
+```python
+EMAIL = 'your_email'
+PASSWORD = 'your_password'
+RECEIVER = 'receiver_email'
+```
+
+3. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+4. Open your web browser and visit http://localhost:5001 to see the homepage.
+5. Explore the blog posts by clicking on them.
+6. Visit the "About" page to learn more about the website.
+7. Use the contact form to send messages to the configured email address.
+
+## Blog Data
+
+The website retrieves blog data from an API and displays it on the blog pages. The data is fetched using the requests library. You can modify the API endpoint in the app.py file to use a different source.
+
+## Contact Form
+
+The website provides a contact form for users to send messages via email. When a user submits the form, an email is sent to the configured email address using the smtplib module. You need to provide your email credentials and the receiver's email address in the app.py file.
+
+## Template Structure
+
+The website uses multiple HTML templates (index.html, post.html, about.html, contact.html) to render the content. You can modify these templates according to your requirements.
+
+## Code Explanation
+
+```python
+# imported Flask and render_template class from flask module
+from flask import Flask, render_template, request
+
+# imported requests module to make HTTP requests
+import requests
+
+# imported datetime module as dt
+import datetime as dt
+
+# imported smtplib module
+import smtplib
+
+# Constants (email credentials, receiver email)
+
+# Blog data retrieval
+
+# Current date retrieval
+
+# Flask application
+
+# Route for homepage
+
+# Route for individual blog post
+
+# Route for about page
+
+# Route for contact page
+
+# Run the Flask application
+```
+
+- The code imports necessary modules, sets up constants for email credentials and receiver, retrieves blog data from an API, and gets the current date.
+- It creates an instance of the Flask class and defines multiple routes using the @app.route decorator.
+- Each route function renders a specific HTML template and handles form submissions for the contact page.
+- The main program checks if the executed file is the main program and runs the Flask application.
