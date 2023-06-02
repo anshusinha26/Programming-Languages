@@ -2242,3 +2242,60 @@ To run this project, follow the steps below:
 - `TWITTER_PASSWORD`: Stores the Twitter account password.
 - `PROMISED_DOWN`: Stores the promised download speed.
 - `PROMISED_UP`: Stores the promised upload speed.
+
+# 🌐 Web development with Flask
+
+This is a simple "Hello, World!" application built using the Flask framework. It demonstrates the basic structure of a Flask application and how to create a route and a view function.
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install Flask using pip:
+
+```bash
+pip install flask
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5000](http://localhost:5000).
+4. You should see the "Hello, World!" message displayed on the page.
+
+## Code Explanation
+
+```python
+# imported Flask class from flask module
+from flask import Flask
+
+# created an instance of the Flask class
+app = Flask(__name__)
+
+# created a route decorator
+@app.route("/")
+
+# created a view function
+def hello_world():
+ return "Hello, World!"
+
+# check if the executed file is the main program and run the app
+if __name__ == "__main__":
+ app.run()
+```
+
+- We imported the Flask class from the flask module.
+- We created an instance of the Flask class and assigned it to the app variable.
+- We defined a route decorator using the @app.route decorator. In this case, the route is set to "/" which represents the root URL.
+- We defined a view function called hello_world() which returns the string "Hello, World!".
+- Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
