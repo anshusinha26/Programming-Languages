@@ -2299,3 +2299,45 @@ if __name__ == "__main__":
 - We defined a route decorator using the @app.route decorator. In this case, the route is set to "/" which represents the root URL.
 - We defined a view function called hello_world() which returns the string "Hello, World!".
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
+
+# 🔺Higher 🔻lower game 2.0
+
+This is a simple number guessing game built using the Flask framework. The game generates a random number between 0 and 9 and the user needs to guess the number. The Flask application provides feedback on whether the guess is too low, too high, or correct.
+
+![Higher lower game 2.0](Images/higher_lower_game_2.0.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install Flask using pip:
+
+```bash
+pip install flask
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5000](http://localhost:5000).
+4. You will see a web page displaying "Guess a number between 0 and 9" along with an animated GIF.
+5. Enter your guess in the URL, for example, [http://localhost:5000/5](http://localhost:5000/5) to guess the number 5.
+6. The application will provide feedback on whether your guess is too low, too high, or correct, along with an appropriate animated GIF.
+
+## Code Explanation
+
+The code snippet consists of two routes: one for the home page ("/") and another for handling the user's guesses ("/<guess>").
+
+- The home page displays a heading and an animated GIF.
+- When the user makes a guess, the Flask application compares the guess with a randomly generated number.
+- The application provides feedback on whether the guess is too low, too high, or correct, and displays an appropriate animated GIF.
