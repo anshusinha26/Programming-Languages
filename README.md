@@ -219,7 +219,7 @@ Feel free to modify the code and add the necessary instructions to solve a speci
 
 To demonstrate the usage of the code, let's consider a hypothetical challenge where the robot needs to move forward until it reaches the goal:
 
-```bash
+```python
 def turn_right():
     for i in range(3):
         turn_left()
@@ -720,7 +720,7 @@ This readme provides an overview of the quiz project, including the main files a
 
 The main.py file is the entry point of the quiz project. It imports the necessary modules and initializes the question bank.
 
-```bash
+```python
 from question_model import Question
 from data import question_data
 
@@ -752,7 +752,7 @@ The question_data list consists of dictionaries, where each dictionary represent
 
 The question_model.py file defines the Question class.
 
-```bash
+```python
 class Question:
     def __init__(self, question, answer):
         self.quizQuestion = question
@@ -765,7 +765,7 @@ The Question class has an **init** method that initializes each question object 
 
 The quiz_brain.py file contains the QuizBrain class, which manages the quiz questions and user interactions.
 
-```bash
+```python
 class QuizBrain:
     def __init__(self, qList):
         self.questionNumber = 0
@@ -805,7 +805,7 @@ main.py
 
 The main.py file contains the main function timCreateHirstPainting that generates the Hirst painting.
 
-```bash
+```python
 def timCreateHirstPainting(x, y):
     import colorgram
 
@@ -885,7 +885,7 @@ main.py
 
 The main.py file contains the main code for the Turtle Racing Game. It includes various functions and configurations to set up the game, create tracks and turtles, and handle the race logic.
 
-```bash
+```python
 # Turtle and Screen class is imported from the turtle module
 import turtle
 from turtle import Turtle, Screen
@@ -962,7 +962,7 @@ The Snake Game is a classic arcade game where the player controls a snake to eat
 
 The main.py file contains the main code for the Snake Game. It sets up the game window, creates the snake, food, and scoreboard objects, and handles the game logic.
 
-```bash
+```python
 # Imported Turtle and Screen class from the turtle module
 from turtle import Turtle, Screen
 
@@ -1049,7 +1049,7 @@ The code includes the following features:
 
 The snake.py file contains the Snake class, which represents the snake object and its behavior.
 
-```bash
+```python
 # Imported Turtle class from the turtle module
 from turtle import Turtle
 
@@ -1130,7 +1130,7 @@ The code includes the following features:
 
 The scoreboard.py file contains the Scoreboard class, which manages the score and highscore display.
 
-```bash
+```python
 # Imported Turtle class from the turtle module
 from turtle import Turtle
 
@@ -1181,7 +1181,7 @@ The code includes the following features:
 
 The food.py file contains the Food class, which represents the food object for the snake.
 
-```bash
+```python
 # Turtle class is imported from the turtle module
 from turtle import Turtle
 
