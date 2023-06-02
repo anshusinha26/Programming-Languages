@@ -2635,3 +2635,58 @@ import smtplib
 - It creates an instance of the Flask class and defines multiple routes using the @app.route decorator.
 - Each route function renders a specific HTML template and handles form submissions for the contact page.
 - The main program checks if the executed file is the main program and runs the Flask application.
+
+# 🧾 Flask WTF
+
+This is a Flask web application that implements a login form using Flask-WTF and Bootstrap. It includes form validation for email and password fields and provides a simple authentication mechanism.
+
+![FlaskWTF](Images/flaskwtf.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+- Flask-WTF extension
+- Flask-Bootstrap extension
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install the required dependencies using pip:
+
+```bash
+pip install flask flask-wtf flask-bootstrap
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+markdown
+
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001) to see the homepage.
+4. Click on the "Login" link to access the login form.
+5. Enter the email address and password for authentication.
+6. If the provided credentials match the predefined values, you will see a success message.
+7. If the credentials are incorrect, you will see a denied message.
+
+## Form Validation
+
+The login form uses Flask-WTF to handle form validation. It includes the following validation rules:
+
+- Email field: Required and must be a valid email address.
+- Password field: Required and must have a minimum length of 8 characters and a maximum length of 20 characters.
+
+You can modify the validation rules by editing the `Login_Form` class in the `app.py` file.
+
+## Templates
+
+The application uses HTML templates (`index.html`, `login.html`, `success.html`, `denied.html`) to render the content. The templates are located in the `templates` directory. You can modify these templates to customize the appearance and functionality of the login form and the success/denied messages.
+
+## Security Note
+
+This application provides a basic demonstration of form handling and authentication. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication mechanisms and properly hash and salt user passwords.
