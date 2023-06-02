@@ -2690,3 +2690,66 @@ The application uses HTML templates (`index.html`, `login.html`, `success.html`,
 ## Security Note
 
 This application provides a basic demonstration of form handling and authentication. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication mechanisms and properly hash and salt user passwords.
+
+# Coffee ☕️ & Wifi 🛜
+
+This is a Flask web application that allows users to add and view cafes. Users can add cafe information such as name, location, opening and closing times, and ratings for coffee, wifi strength, and power socket availability.
+
+![Coffee and wifi](Images/coffee_and_wifi.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+- Flask-WTF extension
+- Flask-Bootstrap extension
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install the required dependencies using pip:
+
+```bash
+pip install flask flask-wtf flask-bootstrap
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001) to see the homepage.
+4. Click on the "Add Cafe" link to access the form for adding a new cafe.
+5. Fill in the required information in the form fields and submit the form.
+6. After submitting the form, you will be redirected to the "Cafes" page, where you can view the list of cafes added so far.
+7. To add more cafes, repeat steps 4-6.
+
+## Form Validation
+
+The cafe form includes several fields with validation rules:
+
+- Cafe name: Required field.
+- Location on Google Maps: Required field and must be a valid URL.
+- Opening Time: Required field.
+- Closing Time: Required field.
+- Coffee Rating: Required field and must be selected from a predefined list of choices.
+- Wifi Strength Rating: Required field and must be selected from a predefined list of choices.
+- Power Socket Availability Rating: Required field and must be selected from a predefined list of choices.
+
+You can modify the validation rules and choices by editing the `Cafe_Form` class in the `app.py` file.
+
+## CSV Data Storage
+
+The cafe information is stored in a CSV file named `cafe-data.csv`. Each cafe entry is added as a new row in the CSV file.
+
+## Templates
+
+The application uses HTML templates (`index.html`, `add.html`, `cafes.html`) to render the content. The templates are located in the `templates` directory. You can modify these templates to customize the appearance and functionality of the application.
+
+## Security Note
+
+This application provides a basic demonstration of form handling and data storage. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure data storage mechanisms and input validation to prevent security vulnerabilities.
+
