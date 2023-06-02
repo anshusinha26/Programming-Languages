@@ -2753,3 +2753,63 @@ The application uses HTML templates (`index.html`, `add.html`, `cafes.html`) to 
 
 This application provides a basic demonstration of form handling and data storage. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure data storage mechanisms and input validation to prevent security vulnerabilities.
 
+# Virtual Bookshelf 📔
+
+This is a Flask web application that allows users to manage a collection of books. Users can add, edit, and delete books from the collection. Each book has a title, author, and rating.
+
+![Virtual bookshelf](Images/virtual_bookshelf.gif)
+
+## Prerequisites
+
+- Python 3.x
+- Flask framework
+- Flask-SQLAlchemy extension
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install the required dependencies using pip:
+
+```bash
+pip install flask flask-sqlalchemy
+```
+
+## Usage
+
+1. Navigate to the project directory.
+2. Run the following command to start the Flask development server:
+
+```bash
+python app.py
+```
+
+3. Open your web browser and visit [http://localhost:5001](http://localhost:5001) to see the homepage.
+4. From the homepage, you can view the existing books in the collection.
+5. Click on the "Add Book" link to access the form for adding a new book.
+6. Fill in the required information in the form fields and submit the form.
+7. After submitting the form, you will be redirected back to the homepage, where you can see the newly added book in the collection.
+8. To edit a book, click on the "Edit" link next to the book you want to update. This will take you to the edit form, where you can modify the book's rating and submit the changes.
+9. To delete a book, click on the "Delete" link next to the book you want to remove. This will remove the book from the collection.
+
+## Database
+
+The book collection is stored in an SQLite database file named `new-books-collection.db`. The database file will be created automatically when you run the application for the first time.
+
+## Templates
+
+The application uses HTML templates (`index.html`, `add.html`, `edit.html`) to render the content. The templates are located in the `templates` directory. You can modify these templates to customize the appearance and functionality of the application.
+
+## Models
+
+The `Book` class represents a book in the collection. It has the following attributes:
+
+- `id`: Unique identifier for the book (primary key).
+- `title`: Title of the book.
+- `author`: Author of the book.
+- `rating`: Rating of the book.
+
+You can modify the `Book` class in the `app.py` file to add additional fields or change the database schema.
+
+## Security Note
+
+This application provides a basic demonstration of CRUD (Create, Read, Update, Delete) operations with a database. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication, authorization, and input validation to prevent security vulnerabilities.
