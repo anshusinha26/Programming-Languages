@@ -1,10 +1,10 @@
 # 🟩 ⏤ Python pro bootcamp ⏤ 🟩
 
 ## Table of contents
-- [:guitar: Band Name Generator](#🎸-band-name-generator)
+- [🎸 Band Name Generator](#🎸-band-name-generator)
 - [Tip Calculator](#tip-calculator)
 
-# :guitar: Band Name Generator 
+# 🎸 Band Name Generator 
 
 This is a simple Python script that generates a band name based on the user's input.
 
