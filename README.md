@@ -4,7 +4,7 @@
 - [Band Name Generator](#band-name-generator)
 - [Tip Calculator](#tip-calculator)
 
-# 🎸 Band Name Generator {#band-name-generator}
+# 🎸 Band Name Generator
 
 This is a simple Python script that generates a band name based on the user's input.
 
@@ -28,7 +28,7 @@ Luna
 Your band name could be New York Luna
 ```
 
-# 💵 Tip Calculator {#tip-calculator}
+# 💵 Tip Calculator
 
 This is a Python script that calculates the amount to be paid by each person when splitting a bill, including the tip.
 
