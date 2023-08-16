@@ -2,7 +2,56 @@
 
 ## Table of contents
 - [🎸 Band Name Generator](#band-name-generator)
-- [Tip Calculator](#tip-calculator)
+- [💵 Tip Calculator](#tip-calculator)
+- [🏝️ Treasure Island](#treasure-island)
+- [✊🏻 ✋🏻 🖖🏻 Rock Paper Scissors](#rock-paper-scissors)
+- [🔑 Password Generator](#password-generator)
+- [ꡌ‍ꡙ‍ꡚ Escaping The Maze](#escaping-the-maze)
+- [🧗🏿‍♂️ Hangman Game](#hangman-game)
+- [🔐 Caesar Cipher](#caesar-cipher)
+- [👨🏻‍⚖️ The Secret Auction Program](#the-secret-auction-program)
+- [🧮 Calculator](#calculator)
+- [🔢 The Number Guessing Game](#the-number-guessing-game)
+- [🔺 Higher 🔻 Lower Game](#higher-lower-game)
+- [☕️ Coffee Machine Project](#coffee-machine-project)
+- [🤔❔ Quiz](#quiz)
+- [🖼️ The Hirst Painting Project](#the-hirst-painting-project)
+- [🐢 Turtle Racing Game](#turtle-racing-game)
+- [🐍 Snake Game](#snake-game)
+- [🏓 Pong Game](#pong-game)
+- [🐢 Turtle Crossing Game](#turtle-crossing-game)
+- [📩 Mail Merge Project](#mail-merge-project)
+- [🇮🇳 India's States Game](#indias-states-game)
+- [Nato Alphabet Project 🇦🇱🇧🇪🇧🇬🇨🇦🇭🇷🇨🇿🇩🇰🇪🇪🇫🇮🇫🇷🇩🇪🇬🇷🇭🇺🇮🇸🇮🇹🇱🇻🇱🇹🇱🇺🇲🇪🇳🇱🇲🇰🇳🇴🇵🇱🇵🇹🇷🇴🇸🇰🇸🇮🇪🇸🇹🇷🇬🇧🇺🇸](#nato-alphabet-project)
+- [🔁 Miles To Kilometer Converter](#miles-to-kilometer-converter)
+- [⏱️ Pomodoro](#pomodoro)
+- [🔑 Password Manager](#password-manager)
+- [🔑 Password Manager 2.0](#password-manager-2.0)
+- [🂠 Flashy](#flashy)
+- [📨 Automated Birthday Wisher](#automated-birthday-wisher)
+- [🛰️ ISS Overhead Notifier](#iss-overhead-notifier)
+- [🙋🏻‍♂️ Quizzler](#quizzler)
+- [⛈️ Weather Alert App](#weather-alert-app)
+- [📈 Stock Trading News Alert](#stock-trading-news-alert)
+- [🔂 Habit Tracking](#habit-tracking)
+- [🚴🏻 Workout Tracking](#workout-tracking)
+- [🍿 100 Movies That You Must Watch](#100-movies-that-you-must-watch)
+- [🎵 The Musical Time Machine](-the-musical-time-machine)
+- [🤖 Automated Amazon Price Tracker](#automated-amazon-price-tracker)
+- [🤖 Automated Cookie clicker](#automated-cookie-clicker)
+- [🤖 Automating Job Applications](#automating-job-applications)
+- [🤖 Internet Speed Twitter Complaint Bot](#internet-speed-twitter-complaint-bot)
+- [🌐 Web Development With Flask](#web-development-with-flask)
+- [🔺Higher 🔻Lower Game 2.0](#higher-lower-game-2.0)
+- [🪪 Name Card](#name-card)
+- [🧑🏻‍💻 Blog](#blog)
+- [🐶 Tindog](#tindog)
+- [🧑🏻‍💻 Blgo 2.0](#blog-2.0)
+- [🧾 Flask WTF](#flask-wtf)
+- [Coffee ☕️ & WiFi 🛜](#coffee-&-wifi)
+- [📔 Virtual Bookshelf](#virtual-bookshelf)
+- [🎬 Top 10 Movies Website](#top-10-movies-website)
+- [Table of contents](#table-of-contents)
 
 # Band Name Generator
 
@@ -28,7 +77,7 @@ Luna
 Your band name could be New York Luna
 ```
 
-# 💵 Tip Calculator
+# Tip Calculator
 
 This is a Python script that calculates the amount to be paid by each person when splitting a bill, including the tip.
 
@@ -54,7 +103,7 @@ How many people to split the bill with? 5
 Each person should pay ₹220.0
 ```
 
-# 🏝️ Treasure Island
+# Treasure Island
 
 Welcome to the Treasure Island! Your mission is to find the treasure and overcome various obstacles along the way.
 
@@ -101,7 +150,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 Welcome to the Treasure Island
 ```
 
-# ✊🏻 ✋🏻 🖖🏻 Rock Paper Scissors
+# Rock Paper Scissors
 
 This is a simple Python script that allows you to play the game Rock Paper Scissors against the computer.
 
@@ -179,7 +228,7 @@ Computer chose:
 It's a draw!
 ```
 
-# 🔑 Password Generator
+# Password Generator
 
 This is a simple Python script that generates a random password based on the user's input.
 
@@ -205,7 +254,7 @@ How many numbers would you like in your password?
 Here is your password: 4wVj!x6U9Q2%
 ```
 
-# ꡌ‍ꡙ‍ꡚ Escaping the maze
+# Escaping The Maze
 
 This is a Python script that provides a universal solution for all challenges in Reeborg's World.
 
@@ -249,7 +298,7 @@ In this example, the robot checks if the front is clear. If it is, the robot mov
 
 Please note that this is just an example, and the actual solution depends on the specific challenge you are working on.
 
-# 🧗🏿‍♂️ Hangman Game
+# Hangman Game
 
 This is a simple implementation of the classic game Hangman. The program randomly selects a word from a predefined list, and the player has to guess the letters in the word to complete it before running out of lives.
 
@@ -303,7 +352,7 @@ Note: You can add or modify the words in the words.py file to customize the game
 
 Enjoy playing Hangman!
 
-# 🔐 Caesar Cipher
+# Caesar Cipher
 
 This project includes two files: main.py and cc.py. The main.py file implements a simple Caesar Cipher encryption and decryption program, while the cc.py file contains the logo for the program.
 
@@ -365,7 +414,7 @@ Caesar Cipher says: 0mmb6w2bioiqvcbowwlbvqop?
 
 Hint: Add all the numbers in the above message and use the result as the shift number to get the decrypted message of Caesar Cipher 😉
 
-# 👨🏻‍⚖️ The Secret Auction Program
+# The Secret Auction Program
 
 This project implements a simple secret auction program using Python. The program allows participants to enter their name and bid amount, and it determines the winner with the highest bid.
 
@@ -424,7 +473,7 @@ Are there any other bidders? Type 'y' for 'yes' or 'n' for 'no': n
 The winner is Jane with a bid of ₹7000
 ```
 
-# 🧮 Calculator
+# Calculator
 
 This program is a simple calculator implemented in Python. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
@@ -496,7 +545,7 @@ What's the next number?: 2
 Type 'y' to continue calculating with 16, or type 'n' to start a new calculation: n
 ```
 
-# 🔢 The Number Guessing Game
+# The Number Guessing Game
 
 This is a simple number guessing game implemented in Python. The program generates a random number between 1 and 100, and the player's objective is to guess the correct number within a limited number of attempts.
 
@@ -563,7 +612,7 @@ Make a guess: 42
 You got it! The answer was 42.
 ```
 
-# 🔺 Higher 🔻 Lower Game
+# Higher Lower Game
 
 This is a simple Higher Lower game implemented in Python. The program presents two data items with descriptions and countries, and the player's objective is to guess which data item has more followers.
 
@@ -640,7 +689,7 @@ Who has more followers? Type 'A' or 'B': B
 Sorry, that's wrong. Final score: 1
 ```
 
-# ☕️ Coffee Machine Project
+# Coffee Machine Project
 
 This is a simple coffee machine project implemented in Python. The program simulates a coffee machine that can serve different types of coffee, track resources, and process transactions.
 
@@ -718,7 +767,7 @@ Money: $2.5
 What would you like? (espresso / latte / cappuccino): exit
 ```
 
-# 🤔❔ Quiz
+# Quiz
 
 This readme provides an overview of the quiz project, including the main files and their functionality.
 
@@ -795,7 +844,7 @@ To run the quiz project, follow these steps:
 4. Run the main.py file using the command python main.py.
 5. The program will display each question from the question bank and prompt the user for an answer. You can modify the project code to add additional features or customize the quiz experience.
 
-# 🖼️ The Hirst Painting Project
+# The Hirst Painting Project
 
 This readme provides an overview of the Hirst painting project, including the main function and its functionality.
 
@@ -875,7 +924,7 @@ To run the Hirst painting project, follow these steps:
 
 You can modify the code to use different images or adjust the parameters to customize the painting.
 
-# 🐢 Turtle Racing Game
+# Turtle Racing Game
 
 This readme provides an overview of the Turtle Racing Game project, including the main functionality and code snippets.
 
@@ -952,7 +1001,7 @@ To run the Turtle Racing Game, follow these steps:
 8. Wait for the race to finish and see the result displayed on the screen.
 9. You can modify the code to add more turtles, change their colors, adjust the race track, or implement additional features to enhance the game.
 
-# 🐍 Snake Game
+# Snake Game
 
 This readme provides an overview of the Snake Game project, including the main functionality and code snippets.
 
@@ -1229,7 +1278,7 @@ To run the Snake Game, execute the main.py file. The game window will open, and 
 
 Note: Make sure that the necessary modules (turtle, random) are installed in your Python environment.
 
-# 🏓 Pong Game
+# Pong Game
 
 This is a simple implementation of the classic Pong game using the Turtle graphics module in Python. The game features two paddles controlled by the players and a ball that bounces off the paddles and walls. The objective is to prevent the ball from passing your paddle and score points by making the ball pass the opponent's paddle.
 
@@ -1283,7 +1332,7 @@ scoreboard.py: This file contains the Scoreboard class, which manages the level 
 
 You can customize various aspects of the game, such as the window size, car speed, and scoring system, by modifying the variables in the code.
 
-# 📩 Mail Merge Project
+# Mail Merge Project
 
 This project involves creating personalized letters using a starting letter template and a list of names. The starting letter template contains a placeholder [name] that needs to be replaced with each name from the list. The final letters are saved in a folder named "ReadyToSend".
 
@@ -1328,7 +1377,7 @@ You can modify the game by changing the map image file or the state data file. M
 
 You can also customize the appearance of the game by modifying the constants such as ALIGNMENT and FONT in the code.
 
-# NATO Alphabet Project 🇦🇱🇧🇪🇧🇬🇨🇦🇭🇷🇨🇿🇩🇰🇪🇪🇫🇮🇫🇷🇩🇪🇬🇷🇭🇺🇮🇸🇮🇹🇱🇻🇱🇹🇱🇺🇲🇪🇳🇱🇲🇰🇳🇴🇵🇱🇵🇹🇷🇴🇸🇰🇸🇮🇪🇸🇹🇷🇬🇧🇺🇸
+# NATO Alphabet Project
 
 The NATO Alphabet Project is a program that converts user input into the corresponding NATO phonetic alphabet code. The NATO phonetic alphabet is used to spell out letters and words in a way that is clear and unambiguous, particularly in communication over radio or phone.
 
@@ -1350,7 +1399,7 @@ Note: The program only accepts letters of the alphabet. If you enter any other c
 
 You can modify the program by changing the NATO phonetic alphabet data file. Make sure the file is in CSV format and follows the required format (e.g., "nato_phonetic_alphabet.csv").
 
-# 🔁 Miles to Kilometer Converter
+# Miles To Kilometer Converter
 
 The Mile to Kilometer Converter is a simple graphical user interface (GUI) program that allows users to convert distances from miles to kilometers. The program is built using the Tkinter module in Python.
 
@@ -1375,7 +1424,7 @@ The converted distance will be displayed in the label next to the "Km" text.
 
 You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the input field, button, and labels. You can adjust the font, padding, and other properties of the elements to fit your preferences.
 
-# ⏱️ Pomodoro
+# Pomodoro
 
 The Pomodoro Timer is a productivity tool that helps you stay focused and manage your time effectively using the Pomodoro Technique. The program is built using the Tkinter module in Python.
 
@@ -1406,7 +1455,7 @@ The Pomodoro Timer follows the Pomodoro Technique, which consists of work sessio
 
 You can customize the program by modifying the constants and the layout of the GUI elements. The program uses a simple grid layout to position the canvas, labels, and buttons. You can adjust the font, padding, colors, and other properties of the elements to fit your preferences.
 
-# 🔑 Password Manager
+# Password Manager
 
 The Password Manager is a simple application that allows users to store and manage their passwords securely. The program is built using the Tkinter module in Python.
 
@@ -1453,7 +1502,7 @@ While the Password Manager provides a convenient way to store and manage passwor
 - Use a strong master password to protect the Password Manager application.
 - Avoid storing sensitive information in plain text, and be cautious when copying passwords to the clipboard.
 
-# 🔑 Password Manager 2.0
+# Password Manager 2.0
 
 The Password Manager is a simple application built using Python and the Tkinter module that allows users to store and manage their passwords securely.
 
@@ -1527,7 +1576,7 @@ The Password Manager relies on the following dependencies:
 pip install pyperclip
 ```
 
-# 🂠 Flashy
+# Flashy
 
 Flashy is a flashcard application built using Python and the Tkinter module. It helps users learn and practice vocabulary by presenting random French words and their English translations.
 
@@ -1597,7 +1646,7 @@ Install it using the following command:
 pip install pandas
 ```
 
-# 📨 Automated Birthday Wisher
+# Automated Birthday Wisher
 
 This is an automated birthday wisher script written in Python. It checks if today matches a birthday in the birthdays.csv file, picks a random letter template, replaces the [NAME] placeholder with the person's actual name from the file, and sends the generated letter to the person's email address.
 
@@ -1643,7 +1692,7 @@ Before running the script, you need to configure the following:
 - The script sends the email using the Gmail SMTP server by default. If you're using a different email provider, you may need to update the SMTP server settings accordingly.
 - Ensure that your email account has the necessary permissions to send emails and that you comply with the email provider's policies and limitations.
 
-# 🛰️ ISS Overhead Notifier
+# ISS Overhead Notifier
 
 This is an ISS (International Space Station) overhead notifier project written in Python. It checks if the ISS is overhead your location during the night and sends an email notification with a random fact about the ISS.
 
@@ -1683,7 +1732,7 @@ To use the ISS overhead notifier:
 - Ensure that your email account has the necessary permissions to send emails and that you comply with the email provider's policies and limitations.
 - The script sleeps for 60 seconds between each check. You can modify this interval based on your requirements.
 
-# 🙋🏻‍♂️ Quizzler
+# Quizzler
 
 This is a simple quiz application called Quizzler. It presents a set of true/false questions and allows users to answer them. The application keeps track of the user's score and provides feedback on each question.
 
@@ -1724,7 +1773,7 @@ Tkinter: It is the standard GUI library for Python. It is included in most Pytho
 - The images for the "True" and "False" buttons are assumed to be located in an images folder within the project directory. Make sure to place the images accordingly.
 - The main.py script creates an instance of the QuizInterface class, which opens the quiz window and starts the quiz. Uncomment the while loop in main.py and comment out the lines below it if you want to run the quiz in the console instead of using the graphical user interface.
 
-# ⛈️ Weather alert app
+# Weather Alert App
 
 This is a simple Python script that sends a rain alert message using the Twilio API and the OpenWeatherMap API. The script checks the weather forecast for a specified location and sends an SMS message if rain is expected.
 
@@ -1789,7 +1838,7 @@ The script relies on the following modules:
 - The phone number used in the from\_ and to fields must be in E.164 format (e.g., "+123456789").
 - Additional configuration or modification may be required based on your specific use case or requirements.
 
-# 📈 Stock trading news alert
+# Stock Trading News Alert
 
 This is a Python script that retrieves stock price data using the Alpha Vantage API, news articles related to a specific company using the News API, and sends an SMS message with the stock price change and news details using the Twilio API.
 
@@ -1869,7 +1918,7 @@ The script relies on the following modules:
 - The phone number used in the from\_ and to fields must be in E.164 format (e.g., "+123456789").
 - Additional configuration or modification may be required based on your specific use case or requirements.
 
-# 🔂 Habit tracking
+# Habit Tracking
 
 This project demonstrates the integration of the Pixela API using the Python `requests` module. It provides functionality to interact with the Pixela API, including creating a user, creating a graph, making data entries, updating data entries, and deleting data entries.
 
@@ -1923,7 +1972,7 @@ This project relies on the `requests` module for making HTTP requests. Ensure th
 
 This project is developed using Python and the `requests` module. For more details on the Pixela API and its functionality, refer to the official documentation: [Pixela API Documentation](https://docs.pixe.la/)
 
-# 🚴🏻 Workout Tracking
+# Workout Tracking
 
 This project allows you to track your exercises and log them into a Google Sheet using the Nutritionix API and Sheety API. It uses the `requests` module to make HTTP requests and the `datetime` module to get the current date and time.
 
@@ -1963,7 +2012,7 @@ This project relies on the `requests` module for making HTTP requests. Ensure th
 - [Nutritionix API Documentation](https://www.nutritionix.com/business/api)
 - [Sheety API Documentation](https://sheety.co/docs/)
 
-# 🍿 100 Movies That You Must Watch
+# 100 Movies That You Must Watch
 
 This project aims to provide a list of 100 movies that you must watch. The list is sourced from the Internet Archive's data, specifically from the Empire Online website's "100 Movies That You Must See" feature.
 
@@ -2005,7 +2054,7 @@ This project relies on the following dependencies:
 
 Make sure you have these dependencies installed before running the script.
 
-# 🎵 The Musical time machine
+# The Musical Time Machine
 This project aims to scrape the Billboard Top 100 songs for a specific date and create a private playlist for those songs on Spotify.
 
 ![The musical time machine](Images/the_musical_time_machine.gif)
@@ -2063,7 +2112,7 @@ This project relies on the following dependencies:
 
 Make sure you have these dependencies installed before running the script.
 
-# 🤖 Automated Amazon price tracker
+# Automated Amazon Price Tracker
 
 This project allows you to track the price of a product on Amazon and receive an email alert when the price drops below a preferred value.
 
@@ -2117,7 +2166,7 @@ This project relies on the following dependencies:
 
 Make sure you have these dependencies installed before running the script.
 
-# 🤖 Automated Cookie Clicker
+# Automated Cookie Clicker
 
 This project uses Selenium WebDriver to automate the process of clicking the cookie in the Cookie Clicker game and buying items from the store.
 
@@ -2157,7 +2206,7 @@ To run this project, follow the steps below:
 
 This project relies on the `selenium` library and a WebDriver compatible with your browser. Make sure you have installed the appropriate WebDriver and the `selenium` library before running the script.
 
-# 🤖 Automating job applications
+# Automating Job Applications
 
 This project utilizes Selenium WebDriver to automate the process of applying for jobs on LinkedIn with the "Easy Apply" feature.
 
@@ -2198,7 +2247,7 @@ To run this project, follow the steps below:
 
 This project relies on the `selenium` library and a WebDriver compatible with your browser. Make sure you have installed the appropriate WebDriver and the `selenium` library before running the script.
 
-# 🤖 Internet Speed Twitter Complaint Bot
+# Internet Speed Twitter Complaint Bot
 
 This project is a Twitter complaint bot that checks the internet speed and tweets at the internet service provider if the speed is below the promised speed.
 
@@ -2249,7 +2298,7 @@ To run this project, follow the steps below:
 - `PROMISED_DOWN`: Stores the promised download speed.
 - `PROMISED_UP`: Stores the promised upload speed.
 
-# 🌐 Web development with Flask
+# Web development With Flask
 
 This is a simple "Hello, World!" application built using the Flask framework. It demonstrates the basic structure of a Flask application and how to create a route and a view function.
 
@@ -2306,7 +2355,7 @@ if __name__ == "__main__":
 - We defined a view function called hello_world() which returns the string "Hello, World!".
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
 
-# 🔺Higher 🔻lower game 2.0
+# Higher Lower Game 2.0
 
 This is a simple number guessing game built using the Flask framework. The game generates a random number between 0 and 9 and the user needs to guess the number. The Flask application provides feedback on whether the guess is too low, too high, or correct.
 
@@ -2348,7 +2397,7 @@ The code snippet consists of two routes: one for the home page ("/") and another
 - When the user makes a guess, the Flask application compares the guess with a randomly generated number.
 - The application provides feedback on whether the guess is too low, too high, or correct, and displays an appropriate animated GIF.
 
-# 🪪 Name card
+# Name Card
 
 This is a simple Flask website that serves an `index.html` template using the Flask `render_template` function.
 
@@ -2409,7 +2458,7 @@ if __name__ == '__main__':
 - The about function is associated with the route and uses render_template to render the index.html template.
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
 
-# 🧑🏻‍💻 Blog
+# Blog
 
 This is a Flask website that fetches blog posts from an API and renders them on different routes using templates.
 
@@ -2482,7 +2531,7 @@ if __name__ == "__main__":
 - In the blog function, we find the requested blog post based on the index parameter and render it using the post.html template.
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
 
-# 🐶 Tindog
+# Tindog
 
 This is a Flask web application that serves two HTML templates, `index.html` and `solution.html`.
 
@@ -2548,7 +2597,7 @@ if __name__ == '__main__':
 - The solution function is associated with the '/solution' route and renders the solution.html template.
 - Finally, we checked if the executed file is the main program and ran the Flask application using app.run().
 
-# 🧑🏻‍💻 Blog 2.0
+# Blog 2.0
 
 This is a Flask web application that serves a blog and a contact form. It retrieves blog data from an API, displays it on the website, and allows users to view individual blog posts. It also provides a contact form for users to send messages via email.
 
@@ -2642,7 +2691,7 @@ import smtplib
 - Each route function renders a specific HTML template and handles form submissions for the contact page.
 - The main program checks if the executed file is the main program and runs the Flask application.
 
-# 🧾 Flask WTF
+# Flask WTF
 
 This is a Flask web application that implements a login form using Flask-WTF and Bootstrap. It includes form validation for email and password fields and provides a simple authentication mechanism.
 
@@ -2697,7 +2746,7 @@ The application uses HTML templates (`index.html`, `login.html`, `success.html`,
 
 This application provides a basic demonstration of form handling and authentication. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication mechanisms and properly hash and salt user passwords.
 
-# Coffee ☕️ & Wifi 🛜
+# Coffee & WiFi
 
 This is a Flask web application that allows users to add and view cafes. Users can add cafe information such as name, location, opening and closing times, and ratings for coffee, wifi strength, and power socket availability.
 
@@ -2759,7 +2808,7 @@ The application uses HTML templates (`index.html`, `add.html`, `cafes.html`) to 
 
 This application provides a basic demonstration of form handling and data storage. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure data storage mechanisms and input validation to prevent security vulnerabilities.
 
-# Virtual Bookshelf 📔
+# Virtual Bookshelf
 
 This is a Flask web application that allows users to manage a collection of books. Users can add, edit, and delete books from the collection. Each book has a title, author, and rating.
 
@@ -2820,7 +2869,7 @@ You can modify the `Book` class in the `app.py` file to add additional fields or
 
 This application provides a basic demonstration of CRUD (Create, Read, Update, Delete) operations with a database. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication, authorization, and input validation to prevent security vulnerabilities.
 
-# 🎬 Top 10 movies website
+# Top 10 Movies Website
 
 This is a Flask web application that allows users to rate and review movies. Users can add movies to the collection, rate them out of 10, and provide their reviews. The application retrieves movie information from The Movie Database (TMDb) API.
 
