@@ -51,7 +51,6 @@
 - [Coffee ☕️ & WiFi 🛜](#coffee-&-wifi)
 - [📔 Virtual Bookshelf](#virtual-bookshelf)
 - [🎬 Top 10 Movies Website](#top-10-movies-website)
-- [Table of contents](#table-of-contents)
 
 # Band Name Generator
 
@@ -2948,3 +2947,4 @@ You can modify the `Movie` class in the `app.py` file to add additional fields o
 
 This application provides a basic demonstration of movie rating and review functionality. It is not intended for production use and lacks proper security measures. In a real-world scenario, it is recommended to implement secure authentication, authorization, and input validation to prevent security vulnerabilities.
 
+- [Back to table of contents - 🟩⏤ Python pro bootcamp ⏤🟩](#table-of-contents)
