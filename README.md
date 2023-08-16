@@ -1,4 +1,4 @@
-# 🟩 ⏤ Python pro bootcamp ⏤ 🟩
+# 🟩⏤ Python pro bootcamp ⏤🟩
 
 ## Table of contents
 - [🎸 Band Name Generator](#band-name-generator)
