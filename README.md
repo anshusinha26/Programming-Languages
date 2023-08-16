@@ -1,7 +1,7 @@
 # 🟩 ⏤ Python pro bootcamp ⏤ 🟩
 
 ## Table of contents
-- [:guitar: Band Name Generator](#:guitar:band-name-generator)
+- [:guitar: Band Name Generator](#band-name-generator)
 - [Tip Calculator](#tip-calculator)
 
 # :guitar: Band Name Generator 
