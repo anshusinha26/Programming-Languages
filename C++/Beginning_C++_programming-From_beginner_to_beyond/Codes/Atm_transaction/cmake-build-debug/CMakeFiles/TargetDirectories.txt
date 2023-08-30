@@ -1,0 +1,3 @@
+/Users/anshusinha/CLionProjects/Atm_transaction/cmake-build-debug/CMakeFiles/Atm_transaction.dir
+/Users/anshusinha/CLionProjects/Atm_transaction/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/anshusinha/CLionProjects/Atm_transaction/cmake-build-debug/CMakeFiles/rebuild_cache.dir
