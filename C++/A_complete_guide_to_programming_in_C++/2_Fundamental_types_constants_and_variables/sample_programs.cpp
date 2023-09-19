@@ -46,24 +46,44 @@
 
 ///// 
 
-// Sample program 4
-// Definition and use of variables
-#include <iostream>
-using namespace std;
-int gVar1;
-int gVar2 = 2;
-int main() {
-    // Global variables,
-    // explicit initialization
-    char ch('A');  // Local variable being initialized
-                // or:  char ch = 'A';
-    cout << "Value of gVar1:    " << gVar1  << endl;
-    cout << "Value of gVar2:    " << gVar2  << endl;
-    cout << "Character in ch:   " << ch     << endl;
+// // Sample program 4
+// // Definition and use of variables
+// #include <iostream>
+// using namespace std;
+// int gVar1;
+// int gVar2 = 2;
+// int main() {
+//     // Global variables,
+//     // explicit initialization
+//     char ch('A');  // Local variable being initialized
+//                 // or:  char ch = 'A';
+//     cout << "Value of gVar1:    " << gVar1  << endl;
+//     cout << "Value of gVar2:    " << gVar2  << endl;
+//     cout << "Character in ch:   " << ch     << endl;
 
-   int sum, number = 3; // Local variables with
-                        // and without initialization
-    sum = number + 5;
-    cout << "Value of sum:      " << sum  << endl;
-    return 0; 
+//    int sum, number = 3; // Local variables with
+//                         // and without initialization
+//     sum = number + 5;
+//     cout << "Value of sum:      " << sum  << endl;
+//     return 0; 
+// }
+
+/////
+
+// Sample program 5
+#include<iostream>
+using namespace std;
+
+int main() {
+    float radius = 1.5;
+    const float pi = 3.141593;
+
+    float circumference = 2 * pi * radius;
+    float area = pi * radius * radius;
+
+    cout << "Radius:        " << radius << endl;
+    cout << "Circumference: " << circumference << endl;
+    cout << "Area:          " << area << endl;
+
+    return 0;
 }
