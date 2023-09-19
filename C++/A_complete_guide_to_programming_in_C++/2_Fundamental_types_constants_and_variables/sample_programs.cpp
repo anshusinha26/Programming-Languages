@@ -31,13 +31,39 @@
 //     return 0;
 // }
 
-// Sample program 3
-#include<iostream>
+/////
+
+// // Sample program 3
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     cout << "\nThis is\t a string\n\t\t"
+//             " with \"many\" escape sequences!\n";
+
+//     return 0;
+// }
+
+///// 
+
+// Sample program 4
+// Definition and use of variables
+#include <iostream>
 using namespace std;
-
+int gVar1;
+int gVar2 = 2;
 int main() {
-    cout << "\nThis is\t a string\n\t\t"
-            " with \"many\" escape sequences!\n";
+    // Global variables,
+    // explicit initialization
+    char ch('A');  // Local variable being initialized
+                // or:  char ch = 'A';
+    cout << "Value of gVar1:    " << gVar1  << endl;
+    cout << "Value of gVar2:    " << gVar2  << endl;
+    cout << "Character in ch:   " << ch     << endl;
 
-    return 0;
+   int sum, number = 3; // Local variables with
+                        // and without initialization
+    sum = number + 5;
+    cout << "Value of sum:      " << sum  << endl;
+    return 0; 
 }
