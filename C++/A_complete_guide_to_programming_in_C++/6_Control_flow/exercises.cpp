@@ -36,33 +36,33 @@
 
 /////
 
-// // Exercise 2
-// // Write a C++ program that outputs a complete multiplication table.
+// Exercise 2
+// Write a C++ program that outputs a complete multiplication table.
 
-// #include<iostream>
-// #include<iomanip>
-// #include<string>
-// using namespace std;
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
 
-// int main() {
-//     cout << "\n\t\t\t***** MULTIPLICATION TABLE *****\n\n\n";
+int main() {
+    cout << "\n\t\t\t***** MULTIPLICATION TABLE *****\n\n\n";
 
-//     int table = 10;
-//     for (int i = 1; i <= table; i++) {
-//         cout << "\t" << i;
-//     }
-//     cout << endl << "     ";
+    int table = 10;
+    for (int i = 1; i <= table; i++) {
+        cout << "\t" << i;
+    }
+    cout << endl << "     ";
 
-//     string line(78, '-');
-//     cout << line << endl;
+    string line(78, '-');
+    cout << line << endl;
 
-//     for (int i = 1; i <= 10; i++) {
-//         cout << setfill(' ') << setw(3) << right << i << " |";
-//         for (int j = 1; j <= 10; j++) {
-//             cout << "\t" << i*j;
-//         }
-//         cout << endl;
-//     }
+    for (int i = 1; i <= 10; i++) {
+        cout << setfill(' ') << setw(3) << right << i << " |";
+        for (int j = 1; j <= 10; j++) {
+            cout << "\t" << i*j;
+        }
+        cout << endl;
+    }
 
-//     return 0;
-// }
+    return 0;
+}
