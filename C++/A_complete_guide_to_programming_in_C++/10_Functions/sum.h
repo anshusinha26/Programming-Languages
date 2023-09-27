@@ -1,0 +1,1 @@
+long sum(long, long, long, long); // prototype
