@@ -1,4 +1,3 @@
-// Sample program 1
 // example of a class
 
 #ifndef __ACCOUNT__ // avoid multiple inclusions
